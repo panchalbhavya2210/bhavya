@@ -6,6 +6,8 @@ export default {
       "main-cyan": "#14E5F2",
       "nav-cyan": "#03233A",
       white: "#FFFFFF",
+      black: "#000000",
+      "footer-cyan": "#022239",
     },
     extend: {
       spacing: {

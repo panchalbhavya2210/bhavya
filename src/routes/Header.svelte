@@ -267,6 +267,7 @@
     color: #000;
     cursor: pointer;
     margin-bottom: 1px;
+    border-radius: 5px 5px 0 0;
   }
   .link-ani-mob::before {
     content: "";
