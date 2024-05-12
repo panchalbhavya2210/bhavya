@@ -138,10 +138,12 @@
 <main>
   <img
     class="absolute -top-32 sm:block md:block lg:hidden w-full sm:-top-96 md:-top-full lg:-top-3/4 overflow-hidden"
+    class="absolute -top-32 sm:block md:block lg:hidden w-full sm:-top-96 md:-top-full lg:-top-3/4 overflow-hidden"
     src={BlobMob}
     alt=""
   />
   <img
+    class="absolute hidden rot sm:hidden md:hidden lg:block sm:w-10/12 md:w-10/12 lg:w-10/12 ml-0 sm:-top-5 sm:-left-48 md:-top-52 md:-left-96 lg:-top-52 lg:-left-96 -z-10"
     class="absolute hidden rot sm:hidden md:hidden lg:block sm:w-10/12 md:w-10/12 lg:w-10/12 ml-0 sm:-top-5 sm:-left-48 md:-top-52 md:-left-96 lg:-top-52 lg:-left-96 -z-10"
     src={Blob}
     alt=""
@@ -149,12 +151,17 @@
   <div
     class="relative top-36 sm:top-28 md:top-28 lg:top-28 ml-5 sm:ml-8 md:ml-10 lg:ml-14 flex"
   >
+  <div
+    class="relative top-36 sm:top-28 md:top-28 lg:top-28 ml-5 sm:ml-8 md:ml-10 lg:ml-14 flex"
+  >
     <div
+      class="para text-3xl leading-normal sm:text-5xl sm:leading-normal md:text-5xl md:leading-normal lg:text-6xl lg:leading-normal"
       class="para text-3xl leading-normal sm:text-5xl sm:leading-normal md:text-5xl md:leading-normal lg:text-6xl lg:leading-normal"
     >
       <p>{greeting}</p>
       <p>I Am Bhavya Panchal</p>
       <p>I Am Web Developer.</p>
+      <p class="text-2xl mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4">
       <p class="text-2xl mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4">
         A web developer and UI designer who loves turning ideas into reality.
         I'm always looking for ways to improve and grow in my craft!
