@@ -79,7 +79,7 @@
     }
 
     const opt = {
-      threshold: 0.5,
+      threshold: 0.3,
     };
 
     const sections = document.querySelectorAll(".sections");
@@ -141,12 +141,12 @@
 
 <main>
   <img
-    class="absolute -top-32 sm:block md:block lg:hidden w-full sm:-top-96 md:-top-full lg:-top-3/4 overflow-hidden"
+    class="absolute -top-32 sm:hidden md:hidden lg:hidden w-full sm:-top-96 md:-top-full lg:-top-3/4 overflow-hidden"
     src={BlobMob}
     alt=""
   />
   <img
-    class="absolute hidden rot sm:hidden md:hidden lg:block sm:w-10/12 md:w-10/12 lg:w-10/12 ml-0 sm:-top-5 sm:-left-48 md:-top-52 md:-left-96 lg:-top-52 lg:-left-96 -z-10"
+    class="absolute hidden rot sm:block md:block lg:block sm:w-10/12 md:w-10/12 lg:w-10/12 ml-0 sm:-top-5 sm:-left-48 md:-top-52 md:-left-96 lg:-top-52 lg:-left-96 -z-10"
     src={Blob}
     alt=""
   />
@@ -157,7 +157,7 @@
       class="para text-3xl leading-normal sm:text-5xl sm:leading-normal md:text-5xl md:leading-normal lg:text-6xl lg:leading-normal"
     >
       <p>{greeting}</p>
-      <p>I Am Bhavya Panchal</p>
+      <p>I Am Xin Ping.</p>
       <p>I Am Web Developer.</p>
       <p class="text-2xl mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4"></p>
       <p class="text-2xl mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4">
@@ -232,15 +232,18 @@
       <p>Full-Stack Developer.</p>
     </div>
     <div class="textData w-full flex justify-center mt-4 text-2xl">
-      <span class="px-4 lg:w-3/5 text-center">
+      <span class="lg:px-4 lg:w-3/5 text-center px-4">
         <p>
           I am a full-stack web developer with a passion for creating unique
           websites.
         </p>
+        <br class="lg:hidden" />
         <p>
           I want to develop a creative website while also providing a unique
           experience to users.
         </p>
+        <br class="lg:hidden" />
+
         <p class="">
           I look forward to working with an experienced team to gain my
           experience too.
@@ -249,7 +252,7 @@
     </div>
   </div>
   <div
-    class="work w-full relative mt-20 top-80 sm:top-40 md:top-40 lg:top-60 sections"
+    class="work w-full relative mt-20 top-72 sm:top-40 md:top-40 lg:top-60 sections"
   >
     <div class="flex justify-start">
       <svg
