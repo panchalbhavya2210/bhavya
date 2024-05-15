@@ -3,11 +3,12 @@ export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     colors: {
-      "main-cyan": "#14E5F2",
-      "nav-cyan": "#03233A",
+      "main-cyan": "#4484FF",
+      "nav-cyan": "#4484FF",
       white: "#FFFFFF",
       black: "#000000",
       "footer-cyan": "#022239",
+      "bgbg-white": "#eef5db",
     },
     extend: {
       spacing: {

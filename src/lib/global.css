@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  background-color: #01101a;
-  color: #fff;
+  background-color: #eef5db;
   font-family: Della Respira;
 }

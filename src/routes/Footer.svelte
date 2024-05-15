@@ -3,7 +3,7 @@
 
 <main>
   <div
-    class="w-full grid lg:grid-cols-3 grid-cols-1 gap-10 lg:justify-items-center bg-footer-cyan h-full relative top-80 pb-5 p-5 mt-5 sm:mt-0 md:mt-0 lg:mt-0 sm:pb-5 md:pb-5 lg:pb-5"
+    class="w-full grid lg:grid-cols-3 grid-cols-1 gap-10 lg:justify-items-center bg-nav-cyan h-full relative top-80 pb-5 p-5 mt-5 sm:mt-0 md:mt-0 lg:mt-0 sm:pb-5 md:pb-5 lg:pb-5"
   >
     <div class="navigation lg:ml-5 mt-5 ml-5">
       <p class="uppercase text-3xl">Navigation</p>
