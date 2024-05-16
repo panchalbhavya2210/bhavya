@@ -4,14 +4,16 @@
   export let name;
   export let logo;
 
+  const sensitivity = 1.5; // Adjust this value to increase sensitivity
+
   onMount(() => {
     let grabElement = document.querySelectorAll(".skill");
 
     const mouseMove = (e) => {
       const { currentTarget: target } = e;
       const rect = target.getBoundingClientRect(),
-        x = e.clientX - rect.left,
-        y = e.clientY - rect.top;
+        x = (e.clientX - rect.left) * sensitivity,
+        y = (e.clientY - rect.top) * sensitivity;
 
       target.style.setProperty("--mouse-x", `${x}px`);
       target.style.setProperty("--mouse-y", `${y}px`);
@@ -23,34 +25,50 @@
   });
 </script>
 
-<div
-  class="skill flex items-center justify-start border border-nav-cyan rounded-md"
->
-  <div class="skillLogo">
-    <img src={logo} alt={name} />
-  </div>
-  <div class="skillName">
-    <span>{name}</span>
+<div class="skill rounded-md p-2">
+  <div class="skillContent" style="transform: translateZ(40px);">
+    <div
+      class="skillLogo w-full flex justify-center items-center h-10"
+      style="transform: translateZ(20px);"
+    >
+      <img
+        src={logo}
+        alt={name}
+        class="w-auto h-8"
+        style="transform: translateZ(10px);"
+      />
+    </div>
+    <div
+      class="skillName text-center mt-3"
+      style="transform: translateZ(30px);"
+    >
+      <span>{name}</span>
+    </div>
   </div>
 </div>
 
 <style>
   .skill {
     position: relative;
-    width: 80%;
-    height: 130%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 26, 81, 0.215);
-    border: 0.5px solid rgba(0, 12, 48, 1);
+    border: 1px solid rgba(0, 65, 92, 0.249);
     border-radius: 5px;
     cursor: default;
+    transition:
+      transform 0.5s,
+      box-shadow 0.5s;
+    transform-style: preserve-3d;
+  }
+
+  .skill:hover {
+    transform: rotateY(5deg) rotateX(5deg) scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 0;
   }
 
   .skill:hover::before {
     opacity: 1;
   }
+
   .skill::before {
     position: absolute;
     content: "";
@@ -75,7 +93,7 @@
       );
     background: radial-gradient(
       400px circle at var(--mouse-x) var(--mouse-y),
-      rgba(145, 222, 255, 0.54),
+      rgba(55, 195, 255, 0.54),
       transparent 40%
     );
   }

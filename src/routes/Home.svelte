@@ -12,11 +12,11 @@
   let greeting = "";
 
   if (clock.getHours() < 12) {
-    greeting = "Good Morning 👋🏼,";
+    greeting = "Good Morning";
   } else if (clock.getHours() < 18) {
-    greeting = "Good Afternoon 👋🏼,";
+    greeting = "Good Afternoon";
   } else {
-    greeting = "Good Evening 👋🏼,";
+    greeting = "Good Evening";
   }
 
   onMount(() => {
@@ -148,6 +148,33 @@
         }
       );
     }
+    function waveHand() {
+      gsap.to(".rotHand", {
+        rotation: -5,
+        transformOrigin: "bottom right", // Set the transform origin to bottom center
+        duration: 0.5,
+        repeat: -1, // Repeat indefinitely
+        yoyo: true, // Yoyo effect (back and forth)
+        ease: "power1.inOut", // Easing function
+        delay: 1, // Initial delay before animation starts
+      });
+    }
+    const handId = document.querySelector(".rotHand");
+    waveHand();
+    handId.addEventListener("mouseenter", () => {
+      greeting = "Good Vibes....";
+      handId.innerHTML = "🚗";
+    });
+    handId.addEventListener("mouseleave", () => {
+      if (clock.getHours() < 12) {
+        greeting = "Good Morning";
+      } else if (clock.getHours() < 18) {
+        greeting = "Good Afternoon";
+      } else {
+        greeting = "Good Evening";
+      }
+      handId.innerHTML = "👋🏼,";
+    });
   });
 
   function scrollTo() {
@@ -163,11 +190,11 @@
 </script>
 
 <main>
-  <img
+  <!-- <img
     class="absolute -top-32 sm:hidden md:hidden lg:hidden w-full sm:-top-96 md:-top-full lg:-top-3/4 overflow-hidden"
     src={BlobMob}
     alt=""
-  />
+  /> -->
   <img
     class="absolute hidden rot sm:block md:block lg:block sm:w-10/12 md:w-10/12 lg:w-10/12 ml-0 sm:-top-5 sm:-left-48 md:-top-52 md:-left-96 lg:-top-52 lg:-left-96 -z-10"
     src={Blob}
@@ -179,8 +206,11 @@
     <div
       class="para text-3xl leading-normal sm:text-5xl sm:leading-normal md:text-5xl md:leading-normal lg:text-6xl lg:leading-normal"
     >
-      <p>{greeting}</p>
-      <p>I Am Bhavya Panchal.</p>
+      <div class="flex">
+        <p>{greeting}</p>
+        <div class="rotHand ml-2">👋🏼</div>
+      </div>
+      <p>I Am Bing Chlling.</p>
       <p>I Am Web Developer.</p>
       <p class="text-2xl mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4"></p>
       <p class="text-2xl mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4">
@@ -219,119 +249,119 @@
       >
     </div>
     <svg
-      width="1376"
-      height="1445"
-      viewBox="0 0 1376 1445"
+      width="1365"
+      height="1436"
+      viewBox="0 0 1365 1436"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       class="w-2/5 h-auto absolute right-10 top-0"
     >
       <path
-        d="M14.5 519.5L699.5 12L1370 519.5"
+        d="M7.5 510.5L692.5 3L1363 510.5"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M10 926L695 1433.5L1365.5 926"
+        d="M6 926L690.747 1433L1361 926"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M14 571.5L699 64L1369.5 571.5"
+        d="M7 562.5L692 55L1362.5 562.5"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M9.5 874L694.5 1381.5L1365 874"
+        d="M5 874L690.253 1381L1361 874"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M13.5 623.5L698.5 116L1369 623.5"
+        d="M6.5 614.5L691.5 107L1362 614.5"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M9 822L694 1329.5L1364.5 822"
+        d="M5 822L689.747 1329L1360 822"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M13 675.5L698 168L1368.5 675.5"
+        d="M6 666.5L691 159L1361.5 666.5"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M8.5 770L693.5 1277.5L1364 770"
+        d="M4 770L689.253 1277L1360 770"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M12.5 727.5L697.5 220L1368 727.5"
+        d="M5.5 718.5L690.5 211L1361 718.5"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M8 718L693 1225.5L1363.5 718"
+        d="M4 718L688.747 1225L1359 718"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M12 779.5L697 272L1367.5 779.5"
+        d="M5 770.5L690 263L1360.5 770.5"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M7.5 666L692.5 1173.5L1363 666"
+        d="M3 666L688.253 1173L1359 666"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M11.5 831.5L696.5 324L1367 831.5"
+        d="M4.5 822.5L689.5 315L1360 822.5"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M7 614L692 1121.5L1362.5 614"
+        d="M3 614L687.747 1121L1358 614"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M11 883.5L696 376L1366.5 883.5"
+        d="M4 874.5L689 367L1359.5 874.5"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M6.5 562L691.5 1069.5L1362 562"
+        d="M2 562L687.253 1069L1358 562"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M10.5 935.5L695.5 428L1366 935.5"
+        d="M3.5 926.5L688.5 419L1359 926.5"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
       <path
-        d="M6 510L691 1017.5L1361.5 510"
+        d="M2 510L686.747 1017L1357 510"
         stroke="#4484FF"
-        stroke-width="7"
+        stroke-width="4"
         class="paths-home"
       />
     </svg>
