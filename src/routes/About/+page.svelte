@@ -29,6 +29,7 @@
   import Observer from "gsap/dist/Observer";
   import { onMount } from "svelte";
   import { scale } from "svelte/transition";
+  import workExp from "../../lib/assets/image.png";
 
   onMount(() => {
     gsap.registerPlugin(TextPlugin, ScrollToPlugin, Observer);

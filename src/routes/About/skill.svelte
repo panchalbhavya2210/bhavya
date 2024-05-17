@@ -58,6 +58,7 @@
       transform 0.5s,
       box-shadow 0.5s;
     transform-style: preserve-3d;
+    background-color: #ecebeb70;
   }
 
   .skill:hover {
