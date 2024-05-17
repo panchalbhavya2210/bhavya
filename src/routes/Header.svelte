@@ -154,7 +154,7 @@
 
 <main>
   <div
-    class="w-11/12 fixHeight h-[70px] mx-auto bg-nav-cyan bg-opacity-55 backdrop-blur-md p-3 rounded-lg mt-5 overflow-hidden fixed-container sm:h-[70px] md:h-[70px] lg:h-[70px]"
+    class="w-11/12 fixHeight h-[70px] mx-auto bg-nav-cyan bg-opacity-85 text-white backdrop-blur-md p-3 rounded-lg mt-5 overflow-hidden fixed-container sm:h-[70px] md:h-[70px] lg:h-[70px]"
   >
     <div class="flex justify-between items-center">
       <img src={Logo} class="w-auto h-10" alt="" />
@@ -216,7 +216,7 @@
           Home
         </div>
       </a>
-      <a href="/">
+      <a href="/About">
         <div
           class="link1 link-ani-mob p-2 aria-mobile my-5"
           aria-current={$page.url.pathname === "/About" ? "page" : undefined}

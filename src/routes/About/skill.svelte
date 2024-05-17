@@ -3,6 +3,7 @@
 
   export let name;
   export let logo;
+  export let classNa;
 
   const sensitivity = 1.5; // Adjust this value to increase sensitivity
 
@@ -25,7 +26,7 @@
   });
 </script>
 
-<div class="skill rounded-md p-2">
+<div class="skill rounded-md p-2 w-full {classNa}">
   <div class="skillContent" style="transform: translateZ(40px);">
     <div
       class="skillLogo w-full flex justify-center items-center h-10"
@@ -60,8 +61,8 @@
   }
 
   .skill:hover {
-    transform: rotateY(5deg) rotateX(5deg) scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: rotateY(5deg) rotateX(5deg) scale(1.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border: 0;
   }
 

@@ -28,29 +28,33 @@
   import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
   import Observer from "gsap/dist/Observer";
   import { onMount } from "svelte";
+  import { scale } from "svelte/transition";
 
   onMount(() => {
     gsap.registerPlugin(TextPlugin, ScrollToPlugin, Observer);
-    const path = document.querySelector(".circ-arr");
-    gsap.fromTo(
-      path,
-      {
-        "stroke-dasharray": path.getTotalLength(),
-        "stroke-dashoffset": path.getTotalLength(),
-      },
-      {
-        "stroke-dashoffset": 0,
-        duration: 2,
-        ease: "power1.out",
-        opacity: 1,
-        onComplete: () => {
-          animationsCompleted++;
-          if (animationsCompleted === 2) {
-            obs.disconnect();
+
+    const opt = {
+      threshold: 0.3,
+    };
+    const sections = document.querySelectorAll(".sectionAbout");
+    const cards = document.querySelectorAll(".hello");
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target.classList.contains("skill")) {
+            cards.forEach((para, ind) => {
+              gsap.to(para, { scale: 1, duration: 0.5 + ind * 0.2 });
+            });
           }
-        },
-      }
-    );
+        } else {
+        }
+      });
+    }, opt);
+
+    sections.forEach((sect) => {
+      obs.observe(sect);
+    });
   });
 </script>
 
@@ -59,29 +63,33 @@
     class="relative top-36 sm:top-28 md:top-28 lg:top-28 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
   >
     <div class="flex text-3xl">
-      <span class="border-l-4 border-l-main-cyan pl-3">ABOUT ME</span>
+      <span class="border-l-4 border-l-main-cyan pl-3">About Me</span>
     </div>
 
-    <div class="flex mt-5">
-      <div class="imageContainer">
-        <div
-          class="betaImg flex justify-center items-center w-36 h-36 rounded-full overflow-hidden"
-        >
-          <img src={MyImage} alt="" class="w-40 h-40 object-cover" />
-        </div>
-        <div class="githubBtn">
-          <button>GITHUB PROFILE</button>
+    <div class="md:flex lg:flex mt-5">
+      <div class="flex justify-center">
+        <div class="imageContainer">
+          <div
+            class="betaImg flex justify-center items-center w-36 h-36 rounded-full overflow-hidden"
+          >
+            <img src={MyImage} alt="" class="w-40 h-40 object-cover" />
+          </div>
+          <div class="githubBtn mt-5">
+            <button>GITHUB PROFILE</button>
+          </div>
         </div>
       </div>
-      <div class="para w-4/5 ml-11 text-xl">
-        Hello, I Am Bhavya. I am a 22-year-old front-end website developer from
-        India. And I am learning the backend. Currently, I am in college, doing
-        the 6th semester of the BCA (Bachelor of Computer Application) Course at
+      <div
+        class="md:w-4/5 lg:w-4/5 md:ml-11 lg:ml-11 text-xl pr-5 m-0 mt-5 md:mt-0 lg:mt-0"
+      >
+        Hello, I am Bhavya. I am a 22-year-old front-end website developer from
+        India. And I am learning the backend currently. I am in college, doing
+        the 6th semester of the BCA (Bachelor of Computer Application) course at
         Monark University. I started programming as a hobby. I got into
         programming in lockdown and started learning it from the Mimo app and
         various YouTube channels. <br />
         Beside working part-time at a pharmacy and doing college, I created some
-        side projects that gave me a lot of experience. And I am also eager to learn
+        side projects that gave me a lot of experience. And I am also eager to learn.
         new things. I have learned a lot from practicals.
         <br /><br />
         Coding Journey, <br /> I started learning front-end website development
@@ -97,77 +105,226 @@
     </div>
   </div>
 
-  <div class="skill">
+  <div class="skill sectionAbout">
     <div
-      class="relative top-36 sm:top-28 md:top-28 lg:top-40 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
+      class="relative top-48 sm:top-28 md:top-28 lg:top-52 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
     >
       <div class="flex text-3xl">
         <span class="border-l-4 border-l-main-cyan pl-3"
           >Skill & Experience</span
         >
       </div>
+      <p class="w-11/12 text-xl lg:ml-5 md:ml-5 lg:mt-5 md:mt-5 mt-5">
+        I've been programming for more than a year, and there is a lot I've
+        learned from creating projects. These are the languages, frameworks, and
+        services I have experience in.
+      </p>
 
-      <div class="grid grid-cols-5 mt-5 gap-5 mx-auto w-11/12">
-        <Skill name="HTML" logo={htmlLogo} />
-        <Skill name="CSS" logo={cssLogo} />
-        <Skill name="JavaScript" logo={jsLogo} />
-        <Skill name="Figma" logo={figmaLogo} />
-        <Skill name="Node JS" logo={nodeLogo} />
-        <Skill name="Svelte JS" logo={svelteLogo} />
-        <Skill name="Nuxt JS" logo={nuxtLogo} />
-        <Skill name="Vue JS" logo={vueLogo} />
-        <Skill name="Git" logo={gitLogo} />
-        <Skill name="Tailwind CSS" logo={tailwindLogo} />
-        <Skill name="Chart JS" logo={chartLogo} />
-        <Skill name="Supabase" logo={supabaseLogo} />
-        <Skill name="Firebase" logo={firebaseLogo} />
-        <Skill name="PHP" logo={phpLogo} />
-        <Skill name="Socket IO" logo={socketLogo} />
-
-        <Skill name="Python" logo={pythonLogo} />
-        <Skill name="django" logo={djangoLogo} />
-        <Skill name="Vercel" logo={vercelLogo} />
-        <Skill name="Flutter" logo={flutterLogo} />
-        <Skill name="Dart" logo={dartLogo} />
-        <Skill name="GSAP" logo={gsapLogo} />
-        <Skill name="Kotlin" logo={kotlinLogo} />
+      <div
+        class="grid md:grid-cols-5 lg:grid-cols-5 grid-cols-2 mt-5 md:gap-5 lg:gap-5 gap-8 mx-auto w-11/12 ml-0 justify-items-center lg:ml-5"
+      >
+        <Skill name="HTML" logo={htmlLogo} classNa="hello scale-0" />
+        <Skill name="CSS" logo={cssLogo} classNa="hello scale-0" />
+        <Skill name="JavaScript" logo={jsLogo} classNa="hello scale-0" />
+        <Skill name="Figma" logo={figmaLogo} classNa="hello scale-0" />
+        <Skill name="Node JS" logo={nodeLogo} classNa="hello scale-0" />
+        <Skill name="Svelte JS" logo={svelteLogo} classNa="hello scale-0" />
+        <Skill name="Nuxt JS" logo={nuxtLogo} classNa="hello scale-0" />
+        <Skill name="Vue JS" logo={vueLogo} classNa="hello scale-0" />
+        <Skill name="Git" logo={gitLogo} classNa="hello scale-0" />
+        <Skill
+          name="Tailwind CSS"
+          logo={tailwindLogo}
+          classNa="hello scale-0"
+        />
+        <Skill name="Chart JS" logo={chartLogo} classNa="hello scale-0" />
+        <Skill name="Supabase" logo={supabaseLogo} classNa="hello scale-0" />
+        <Skill name="Firebase" logo={firebaseLogo} classNa="hello scale-0" />
+        <Skill name="PHP" logo={phpLogo} classNa="hello scale-0" />
+        <Skill name="Socket IO" logo={socketLogo} classNa="hello scale-0" />
+        <Skill name="Python" logo={pythonLogo} classNa="hello scale-0" />
+        <Skill name="django" logo={djangoLogo} classNa="hello scale-0" />
+        <Skill name="Vercel" logo={vercelLogo} classNa="hello scale-0" />
+        <Skill name="Flutter" logo={flutterLogo} classNa="hello scale-0" />
+        <Skill name="Dart" logo={dartLogo} classNa="hello scale-0" />
+        <Skill name="GSAP" logo={gsapLogo} classNa="hello scale-0" />
+        <Skill name="Kotlin" logo={kotlinLogo} classNa="hello scale-0" />
       </div>
     </div>
   </div>
 
-  <div class="skill">
+  <div class="work sectionAbout">
     <div
-      class="relative top-52 sm:top-28 md:top-28 lg:top-52 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
+      class="relative top-60 sm:top-28 md:top-28 lg:top-64 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
     >
       <div class="flex text-3xl">
         <span class="border-l-4 border-l-main-cyan pl-3">Work & Experience</span
         >
       </div>
 
-      <div class="work">
-        <svg
-          width="323"
-          height="1697"
-          viewBox="0 0 323 1697"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+      <div class="work mt-5">
+        <div class="flex items-start">
+          <svg
+            width="41"
+            height="124"
+            viewBox="0 0 41 124"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="20.5" cy="20.5" r="20" stroke="black" />
+            <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
+            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+          </svg>
+
+          <div class=" ml-3">
+            <p class="text-2xl">Param Enterprise.</p>
+            <p>
+              Stock Manager | Here i worked for 2 years and i did management of
+              the company stock and other works.
+            </p>
+            <p>2020-2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="work mt-">
+        <div class="flex items-start">
+          <svg
+            width="41"
+            height="124"
+            viewBox="0 0 41 124"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="20.5" cy="20.5" r="20" stroke="black" />
+            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+          </svg>
+
+          <div class=" ml-3">
+            <p class="text-2xl">Perpetual Pharmaceuticals.</p>
+            <p>
+              Office Manager | Currently i am working here and i manage the
+              whole office by myself. Creating and parceling the order while
+              also managing the stock.
+            </p>
+            <p>2020 - Currently Working.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="study sectionAbout">
+    <div
+      class="relative top-60 sm:top-28 md:top-28 lg:top-64 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
+    >
+      <div class="flex text-3xl">
+        <span class="border-l-4 border-l-main-cyan pl-3"
+          >Study & Education.</span
         >
-          <path
-            d="M161.5 163V1697"
-            stroke="#4484FF"
-            stroke-width="37"
-            class="circ-arr"
-          />
-          <circle
-            cx="161.5"
-            cy="161.5"
-            r="158.5"
-            stroke="#E4DFDA"
-            stroke-width="6"
-            class="circ-arr"
-          />
-          <circle cx="161.5" cy="161.5" r="47.5" fill="#4484FF" />
-        </svg>
+      </div>
+
+      <div class="work mt-5">
+        <div class="flex items-start">
+          <svg
+            width="41"
+            height="124"
+            viewBox="0 0 41 124"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="20.5" cy="20.5" r="20" stroke="black" />
+            <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
+            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+          </svg>
+
+          <div class=" ml-3">
+            <p class="text-2xl">Akshar Vidhyavihar School.</p>
+            <p>HSC (Higher Secondary school Certificate) 12th Pass</p>
+            <p>2018</p>
+          </div>
+        </div>
+      </div>
+      <div class="work mt-">
+        <div class="flex items-start">
+          <svg
+            width="41"
+            height="124"
+            viewBox="0 0 41 124"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="20.5" cy="20.5" r="20" stroke="black" />
+            <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
+            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+          </svg>
+
+          <div class=" ml-3">
+            <p class="text-2xl">NV Patel College.</p>
+            <p>B.com | Drop Out 3rd Sem.</p>
+            <p>2019 - Dropped out.</p>
+          </div>
+        </div>
+      </div>
+      <div class="work mt-">
+        <div class="flex items-start">
+          <svg
+            width="41"
+            height="124"
+            viewBox="0 0 41 124"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="20.5" cy="20.5" r="20" stroke="black" />
+            <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
+            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+          </svg>
+
+          <div class=" ml-3">
+            <p class="text-2xl">Mimo Application (Online Study).</p>
+            <p>Learned HTML5, CSS3, JS From Mimo.</p>
+            <p>2020.</p>
+          </div>
+        </div>
+      </div>
+      <div class="work mt-">
+        <div class="flex items-start">
+          <svg
+            width="41"
+            height="124"
+            viewBox="0 0 41 124"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="20.5" cy="20.5" r="20" stroke="black" />
+            <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
+            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+          </svg>
+
+          <div class=" ml-3">
+            <p class="text-2xl">Hasmukh Goswami College Of Engineering.</p>
+            <p>BCA (Graduated)</p>
+            <p>2024</p>
+          </div>
+        </div>
+      </div>
+      <div class="work mt-">
+        <div class="flex items-start">
+          <svg
+            width="41"
+            height="124"
+            viewBox="0 0 41 124"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="20.5" cy="20.5" r="20" stroke="black" />
+            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+          </svg>
+
+          <div class=" ml-3">
+            <p class="text-2xl">InfoLabz Technologies.</p>
+            <p>Internship + Training</p>
+            <p>2023 - Ongoing</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
