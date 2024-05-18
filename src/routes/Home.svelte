@@ -171,7 +171,7 @@
       } else {
         greeting = "Good Evening";
       }
-      handId.innerHTML = "👋🏼,";
+      handId.innerHTML = "👋🏼";
     });
   });
 
@@ -197,6 +197,7 @@
       <div class="flex">
         <p>{greeting}</p>
         <div class="rotHand ml-2">👋🏼</div>
+        ,
       </div>
       <p>I Am Bhavya Panchal .</p>
       <p>I Am Web Developer.</p>
