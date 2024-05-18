@@ -1,7 +1,5 @@
 <script>
   import { onMount } from "svelte";
-  import Blob from "../lib/assets/blob.svg";
-  import BlobMob from "../lib/assets/blob-mob.svg";
   import gsap from "gsap";
   import TextPlugin from "gsap/dist/TextPlugin";
   import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
@@ -190,27 +188,17 @@
 </script>
 
 <main>
-  <!-- <img
-    class="absolute -top-32 sm:hidden md:hidden lg:hidden w-full sm:-top-96 md:-top-full lg:-top-3/4 overflow-hidden"
-    src={BlobMob}
-    alt=""
-  /> -->
-  <img
-    class="absolute hidden rot sm:block md:block lg:block sm:w-10/12 md:w-10/12 lg:w-10/12 ml-0 sm:-top-5 sm:-left-48 md:-top-52 md:-left-96 lg:-top-52 lg:-left-96 -z-10"
-    src={Blob}
-    alt=""
-  />
   <div
     class="relative top-36 sm:top-28 md:top-28 lg:top-28 ml-5 sm:ml-8 md:ml-10 lg:ml-14 flex"
   >
     <div
-      class="para text-3xl leading-normal sm:text-5xl sm:leading-normal md:text-5xl md:leading-normal lg:text-6xl lg:leading-normal"
+      class="para text-3xl leading-normal sm:text-5xl sm:leading-normal md:text-3xl md:leading-normal lg:text-6xl lg:leading-normal"
     >
       <div class="flex">
         <p>{greeting}</p>
         <div class="rotHand ml-2">👋🏼</div>
       </div>
-      <p>I Am Bing Chlling.</p>
+      <p>I Am Bhavya Panchal .</p>
       <p>I Am Web Developer.</p>
       <p class="text-2xl mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4"></p>
       <p class="text-2xl mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4">
@@ -254,7 +242,7 @@
       viewBox="0 0 1365 1436"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      class="w-2/5 h-auto absolute right-10 top-0"
+      class="w-2/5 h-auto absolute right-10 top-0 md:block lg:block hidden"
     >
       <path
         d="M7.5 510.5L692.5 3L1363 510.5"
@@ -367,10 +355,7 @@
     </svg>
   </div>
 
-  <div
-    class="bio w-full relative top-80 sm:top-40 md:top-40 lg:top-60 sections"
-    id="section-next"
-  >
+  <div class="bio w-full mt-72 sections" id="section-next">
     <div class="flex justify-start">
       <svg
         width="1678"
@@ -378,11 +363,12 @@
         viewBox="0 0 1678 81"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        class=""
       >
         <path
           d="M0 44.5C0 44.5 434 44.5 683 44.5C714.5 44.5 746.5 6.5 746.5 6.5H833V74H896H936C936 74 979.942 6.49999 1016 6.5C1201.5 6.50005 1677.5 6.5 1677.5 6.5"
           stroke="#4484FF"
-          stroke-width="2"
+          stroke-width="5"
           class="pathBio opacity-0"
         />
         <path
@@ -421,9 +407,7 @@
       </span>
     </div>
   </div>
-  <div
-    class="work w-full relative mt-20 top-72 sm:top-40 md:top-40 lg:top-60 sections"
-  >
+  <div class="work w-full mt-20 sections">
     <div class="flex justify-start">
       <svg
         width="1537"
@@ -435,7 +419,7 @@
         <path
           d="M0 35C0 35 301 35 525.5 35C553.858 35 592.5 7 592.5 7L623 70.5L649 7L682.5 70.5L710.5 7H774L798 35L783.5 70.5H817V7H847.5L855.5 20L847.5 35L831.5 39L847.5 54.5L855.5 70.5H883.5V35H890L910.014 59.5C910.014 59.5 928 46.5 952 59.5C959.474 63.5484 980.5 70.5 980.5 70.5H1537"
           stroke="#4484FF"
-          stroke-width="3"
+          stroke-width="5"
           class="pathWork opacity-0"
         />
         <path

@@ -45,7 +45,13 @@
         if (entry.isIntersecting) {
           if (entry.target.classList.contains("skill")) {
             cards.forEach((para, ind) => {
-              gsap.to(para, { scale: 1, duration: 0.5 + ind * 0.2 });
+              gsap.to(para, {
+                scale: 1,
+                duration: 0.5 + ind * 0.2,
+                onComplete: () => {
+                  obs.disconnect();
+                },
+              });
             });
           }
         } else {
@@ -104,12 +110,12 @@
         developer.
       </div>
     </div>
-  </div>
+    <!-- </div> -->
 
-  <div class="skill sectionAbout">
-    <div
-      class="relative top-48 sm:top-28 md:top-28 lg:top-52 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
-    >
+    <div class="skill sectionAbout mt-10">
+      <!-- <div
+      class="relative top-48 sm:top-28 md:top-40 lg:top-52 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
+    > -->
       <div class="flex text-3xl">
         <span class="border-l-4 border-l-main-cyan pl-3"
           >Skill & Experience</span
@@ -151,13 +157,13 @@
         <Skill name="GSAP" logo={gsapLogo} classNa="hello scale-0" />
         <Skill name="Kotlin" logo={kotlinLogo} classNa="hello scale-0" />
       </div>
+      <!-- </div> -->
     </div>
-  </div>
 
-  <div class="work sectionAbout">
-    <div
-      class="relative top-60 sm:top-28 md:top-28 lg:top-64 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
-    >
+    <div class="work sectionAbout mt-10">
+      <!-- <div
+      class="relative top-60 sm:top-28 md:top-56 lg:top-64 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
+    > -->
       <div class="flex text-3xl">
         <span class="border-l-4 border-l-main-cyan pl-3">Work & Experience</span
         >
@@ -167,17 +173,18 @@
         <div class="flex items-start">
           <svg
             width="41"
-            height="124"
-            viewBox="0 0 41 124"
+            height="145"
+            viewBox="0 0 41 145"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
-            <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
+            <path d="M20.5 21V145" stroke="#4484FF" stroke-width="5" />
             <circle cx="21" cy="21" r="13" fill="#4484FF" />
           </svg>
 
-          <div class=" ml-3">
+          <div class="w-11/12 ml-3">
             <p class="text-2xl">Param Enterprise.</p>
             <p>
               Stock Manager | Here i worked for 2 years and i did management of
@@ -187,7 +194,7 @@
           </div>
         </div>
       </div>
-      <div class="work mt-">
+      <div class="work">
         <div class="flex items-start">
           <svg
             width="41"
@@ -195,12 +202,13 @@
             viewBox="0 0 41 124"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
             <circle cx="21" cy="21" r="13" fill="#4484FF" />
           </svg>
 
-          <div class=" ml-3">
+          <div class="w-11/12 ml-3">
             <p class="text-2xl">Perpetual Pharmaceuticals.</p>
             <p>
               Office Manager | Currently i am working here and i manage the
@@ -211,12 +219,12 @@
           </div>
         </div>
       </div>
+      <!-- </div> -->
     </div>
-  </div>
-  <div class="study sectionAbout">
-    <div
-      class="relative top-60 sm:top-28 md:top-28 lg:top-64 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
-    >
+    <div class="study sectionAbout">
+      <!-- <div
+      class="relative top-60 sm:top-28 md:top-64 lg:top-64 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
+    > -->
       <div class="flex text-3xl">
         <span class="border-l-4 border-l-main-cyan pl-3"
           >Study & Education.</span
@@ -231,20 +239,21 @@
             viewBox="0 0 41 124"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
             <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
             <circle cx="21" cy="21" r="13" fill="#4484FF" />
           </svg>
 
-          <div class=" ml-3">
+          <div class="w-full ml-3">
             <p class="text-2xl">Akshar Vidhyavihar School.</p>
             <p>HSC (Higher Secondary school Certificate) 12th Pass</p>
             <p>2018</p>
           </div>
         </div>
       </div>
-      <div class="work mt-">
+      <div class="work">
         <div class="flex items-start">
           <svg
             width="41"
@@ -252,34 +261,36 @@
             viewBox="0 0 41 124"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
             <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
             <circle cx="21" cy="21" r="13" fill="#4484FF" />
           </svg>
 
-          <div class=" ml-3">
+          <div class="w-full ml-3">
             <p class="text-2xl">NV Patel College.</p>
             <p>B.com | Drop Out 3rd Sem.</p>
             <p>2019 - Dropped out.</p>
           </div>
         </div>
       </div>
-      <div class="work mt-">
-        <div class="flex items-start">
+      <div class="work">
+        <div class="w-full flex items-start">
           <svg
             width="41"
             height="124"
             viewBox="0 0 41 124"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
             <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
             <circle cx="21" cy="21" r="13" fill="#4484FF" />
           </svg>
 
-          <div class=" ml-3">
+          <div class="w-full ml-3">
             <p class="text-2xl">Mimo Application (Online Study).</p>
             <p>Learned HTML5, CSS3, JS From Mimo.</p>
             <p>2020.</p>
@@ -294,20 +305,21 @@
             viewBox="0 0 41 124"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
             <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
             <circle cx="21" cy="21" r="13" fill="#4484FF" />
           </svg>
 
-          <div class=" ml-3">
+          <div class="w-full ml-3">
             <p class="text-2xl">Hasmukh Goswami College Of Engineering.</p>
             <p>BCA (Graduated)</p>
             <p>2024</p>
           </div>
         </div>
       </div>
-      <div class="work mt-">
+      <div class="work">
         <div class="flex items-start">
           <svg
             width="41"
@@ -315,17 +327,19 @@
             viewBox="0 0 41 124"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
             <circle cx="21" cy="21" r="13" fill="#4484FF" />
           </svg>
 
-          <div class=" ml-3">
+          <div class="w-full ml-3">
             <p class="text-2xl">InfoLabz Technologies.</p>
             <p>Internship + Training</p>
             <p>2023 - Ongoing</p>
           </div>
         </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>
