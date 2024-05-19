@@ -35,11 +35,6 @@
   onMount(() => {
     gsap.registerPlugin(TextPlugin, ScrollToPlugin, Observer, ScrollTrigger);
 
-    gsap.to(".svgContainer", {
-      scrollTrigger: window,
-      y: -25,
-    });
-
     const paths = document.querySelectorAll(".paths-home");
 
     // Animate stroke of each path
@@ -127,9 +122,7 @@
       />
     </svg>
   </div>
-  <div
-    class="relative top-36 sm:top-28 md:top-28 lg:top-28 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
-  >
+  <div class="relative ml-5 sm:ml-8 md:ml-10 lg:ml-14">
     <div class="flex text-3xl">
       <span class="border-l-4 border-l-main-cyan pl-3">About Me</span>
     </div>
