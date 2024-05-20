@@ -194,6 +194,7 @@
         cssLogo
         apiLogo
         jsLogo
+        projectLink="https://temp-cast.netlify.app"
       />
       <Project
         projectTitle="E-commerce Site"
@@ -205,6 +206,7 @@
         svelteLogo
         supabaseLogo
         tailwindLogo
+        projectLink="https://e-commerce-try.vercel.app"
       />
       <Project
         projectTitle="GiftCommerce Site"
@@ -216,6 +218,7 @@
         djangoLogo
         python
         jsLogo
+        projectLink="https://github.com/panchalbhavya2210/gift_hamper"
       />
       <Project
         projectTitle="Password Generator"
@@ -227,6 +230,7 @@
         htmlLogo
         cssLogo
         jsLogo
+        projectLink="https://bit-pass.netlify.app"
       />
       <Project
         projectTitle="News Site"
@@ -237,6 +241,7 @@
         projectDisc="This is a top headlines India site. That displays 20 news stories using the Nuxt and News API."
         nuxtLogo
         tailwindLogo
+        projectLink="https://nuxi-news.vercel.app"
       />
       <Project
         projectTitle="Currency Converter"
@@ -248,6 +253,7 @@
         htmlLogo
         jsLogo
         apiLogo
+        projectLink="https://currency-converter-pb.netlify.app"
       />
       <Project
         projectTitle="Assignment Site"
@@ -259,6 +265,7 @@
         htmlLogo
         jsLogo
         fireBaseLogo
+        projectLink="https://dochoster.netlify.app"
       />
       <Project
         projectTitle="Blogging Site"
@@ -270,6 +277,7 @@
         htmlLogo
         tailwindLogo
         fireBaseLogo
+        projectLink="https://byte-blog.vercel.app"
       />
     </div>
   </div>

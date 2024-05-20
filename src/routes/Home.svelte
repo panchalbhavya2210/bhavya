@@ -440,7 +440,7 @@
     <div
       class="grid lg:grid-cols-3 md:grid-cols-2 mt-10 gap-5 md:gap-2 sm:grid-cols-2 justify-items-center"
     >
-      <div class="projectOne">
+      <div class="projectOne relative">
         <div class="w-80 h-96 border-main-cyan rounded-lg border-2">
           <div
             class="rectIconName w-11/12 h-20 bg-main-cyan mx-auto my-4 rounded-lg flex justify-start items-center"
@@ -466,56 +466,48 @@
               <div class="para">
                 <p class="text-black ml-5 text-xl font-bold">E-commerce Site</p>
               </div>
-              <div class="flex ml-5 mt-1 w-16 justify-between relative">
-                <svg
-                  width="84"
-                  height="98"
-                  viewBox="0 0 84 98"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M79.3047 12.2874C82.177 16.8827 83.5502 22.2571 83.2342 27.667C82.9181 33.077 80.9285 38.2549 77.5407 42.4845C80.2518 48.2697 80.7497 54.8476 78.9404 60.975C77.1311 67.1023 73.1398 72.3546 67.7211 75.7392L40.0197 93.0525C34.7844 96.3363 28.5548 97.6586 22.437 96.7845C16.3192 95.9104 10.7091 92.8965 6.60287 88.278C2.49665 83.6594 0.160039 77.7352 0.00792385 71.5571C-0.144192 65.379 1.89804 59.347 5.77198 54.532C3.06087 48.7468 2.56291 42.1689 4.37223 36.0415C6.18155 29.9142 10.1728 24.6618 15.5916 21.2773L43.2864 3.9705C46.197 2.1519 49.4373 0.924415 52.8224 0.358156C56.2074 -0.208104 59.6708 -0.102051 63.0148 0.670256C66.3589 1.44256 69.518 2.866 72.3119 4.85929C75.1058 6.85257 77.4798 9.37667 79.2981 12.2874M46.7491 9.5173C50.5125 7.15948 54.9652 6.14967 59.3776 6.65329C63.79 7.15692 67.9006 9.14412 71.036 12.2894C74.1714 15.4346 76.1456 19.5514 76.6354 23.9654C77.1252 28.3794 76.1014 32.8289 73.7317 36.5849C69.7341 31.9095 64.2129 28.7972 58.1432 27.7976L62.8733 24.838L59.4107 19.2977L26.169 40.0737L29.6317 45.6074L43.4824 36.9573C47.8905 34.2022 53.2125 33.3111 58.2776 34.48C63.3428 35.6489 67.7361 38.782 70.4912 43.1901C73.2463 47.5982 74.1374 52.9202 72.9685 57.9854C71.7996 63.0505 68.6665 67.4438 64.2584 70.1989L36.557 87.5122C32.7936 89.8701 28.3409 90.8799 23.9285 90.3762C19.5161 89.8726 15.4055 87.8854 12.2701 84.7402C9.13472 81.5949 7.16045 77.4781 6.6707 73.0641C6.18094 68.6502 7.20474 64.2007 9.57438 60.4446C13.572 65.12 19.0932 68.2324 25.1629 69.232L20.4262 72.185L23.8889 77.7253L57.1371 56.9493L53.6744 51.4156L39.8237 60.0722C35.4147 62.8273 30.0919 63.7181 25.0262 62.5486C19.9604 61.3791 15.5667 58.2451 12.8116 53.8362C10.0566 49.4272 9.16581 44.1044 10.3353 39.0386C11.5048 33.9729 14.6387 29.5792 19.0477 26.8241L46.7491 9.5173Z"
-                    fill="#01101A"
-                  />
-                </svg>
-
-                <svg
-                  width="126"
-                  height="128"
-                  viewBox="0 0 126 128"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
-                >
-                  <path
-                    d="M57.0609 0.00723914C56.1855 -0.0313454 55.3136 0.141749 54.5193 0.511846C53.7249 0.881943 53.0316 1.43813 52.4979 2.13324L3.13694 64.2832C-2.68606 71.6152 2.53994 82.4312 11.8999 82.4312H62.8799L63.4289 122.295C63.4289 125.925 66.0169 127.999 69.1329 127.999C70.6889 127.999 72.2439 127.475 73.2809 125.919L122.595 63.7182C128.818 56.4582 123.632 45.5702 114.288 45.5702H62.7399L62.4759 5.52524C62.4289 2.23724 59.8159 0.122239 57.0669 0.00723914H57.0609ZM67.5879 50.7552H114.294C116.887 50.7552 118.442 51.7972 119.48 54.3902C120.517 56.4642 119.998 59.0572 118.96 60.6122L69.6629 122.803H69.1339C69.1339 122.803 68.6149 122.803 68.6149 122.285L67.5839 50.7502L67.5879 50.7552Z"
-                    fill="#01101A"
-                  />
-                </svg>
-
-                <svg
-                  width="52"
-                  height="31"
-                  viewBox="0 0 52 31"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
-                >
-                  <path
-                    d="M25.8333 0C18.9358 0 14.6475 3.43583 12.9167 10.3333C15.5 6.8975 18.5225 5.60583 21.9583 6.45833C23.9217 6.94917 25.3425 8.37 26.8925 9.94583C29.4242 12.5292 32.2917 15.5 38.75 15.5C45.6475 15.5 49.9358 12.0642 51.6667 5.16667C49.0833 8.6025 46.0608 9.89417 42.625 9.04167C40.6617 8.55083 39.2667 7.13 37.6908 5.55417C35.1592 2.97083 32.2917 0 25.8333 0ZM12.9167 15.5C6.01917 15.5 1.73083 18.9358 0 25.8333C2.58333 22.3975 5.60583 21.1058 9.04167 21.9583C11.005 22.4492 12.4 23.87 13.9758 25.4458C16.5075 28.0292 19.375 31 25.8333 31C32.7308 31 37.0192 27.5642 38.75 20.6667C36.1667 24.1025 33.1442 25.3942 29.7083 24.5417C27.745 24.0508 26.35 22.63 24.7742 21.0542C22.2425 18.4708 19.375 15.5 12.9167 15.5Z"
-                    fill="#01101A"
-                  />
-                </svg>
-              </div>
+            </div>
+          </div>
+          <div class="projectDisc px-4 text-xl">
+            This is an e-commerce site where you can buy different products.
+            This site uses Svelte, Supabase, and Tailwind CSS, which makes it a
+            full-stack site.
+            <div class="visit absolute bottom-5">
+              <a href="https://e-commerce-try.vercel.app" target="_blank">
+                <button
+                  class="uppercase font-bold text-left transition-all text-xl"
+                  >Visit Site<span class="text-nav-cyan">.</span>
+                  <span class=" opacity-0">
+                    <svg
+                      width="154"
+                      height="28"
+                      viewBox="0 0 154 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-auto -mt-6 h-6"
+                    >
+                      <path
+                        d="M0 25.5H125L152.5 3"
+                        stroke="#4484ff"
+                        stroke-width="4"
+                      />
+                      <path
+                        d="M135 3H151V19"
+                        stroke="#4484ff"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button></a
+              >
             </div>
           </div>
         </div>
       </div>
-      <div class="projectOne">
+
+      <div class="projectOne relative">
         <div class="w-80 h-96 border-main-cyan rounded-lg border-2">
           <div
             class="rectIconName w-11/12 h-20 bg-main-cyan mx-auto my-4 rounded-lg flex justify-start items-center"
@@ -539,9 +531,44 @@
             </div>
             <p class="text-black ml-5 text-xl font-bold">Weather Site</p>
           </div>
+          <div class="projectDisc px-4 text-xl">
+            This website shows weather off different areas and also of your own
+            location. This site uses HTML, CSS, JS, and API to display weather.
+            <div class="visit absolute bottom-5">
+              <a href="https://temp-cast.netlify.app" target="_blank">
+                <button
+                  class="uppercase font-bold text-left transition-all text-xl"
+                  >Visit Site<span class="text-nav-cyan">.</span>
+                  <span class=" opacity-0">
+                    <svg
+                      width="154"
+                      height="28"
+                      viewBox="0 0 154 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-auto -mt-6 h-6"
+                    >
+                      <path
+                        d="M0 25.5H125L152.5 3"
+                        stroke="#4484ff"
+                        stroke-width="4"
+                      />
+                      <path
+                        d="M135 3H151V19"
+                        stroke="#4484ff"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button></a
+              >
+            </div>
+          </div>
         </div>
       </div>
-      <div class="projectOne">
+      <div class="projectOne relative">
         <div class="w-80 h-96 border-main-cyan rounded-lg border-2">
           <div
             class="rectIconName w-11/12 h-20 bg-main-cyan mx-auto my-4 rounded-lg flex justify-start items-center"
@@ -564,6 +591,18 @@
               </svg>
             </div>
             <p class="text-black ml-5 text-xl font-bold">Assignment Site</p>
+          </div>
+          <div class="projectDisc px-4 text-xl">
+            This is an assignment site. This site uses HTML, CSS, and JS, which
+            provide assignments to college students.
+            <div class="visit absolute bottom-5">
+              <a href="https://dochoster.netlify.app" target="_blank">
+                <button
+                  class="uppercase font-bold text-left transition-all text-xl"
+                  >Visit Site<span class="text-nav-cyan">.</span>
+                </button></a
+              >
+            </div>
           </div>
         </div>
       </div>

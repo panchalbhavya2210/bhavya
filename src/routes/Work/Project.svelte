@@ -15,7 +15,8 @@
     nuxtLogo,
     tailwindLogo,
     fireBaseLogo,
-    projectDisc;
+    projectDisc,
+    projectLink;
 </script>
 
 <main>
@@ -211,36 +212,38 @@
       <div class="projectDisc px-4 text-xl">
         {projectDisc}
         <div class="visit absolute bottom-5">
-          <button
-            class="uppercase font-bold text-left transition-all text-xl"
-            id={btnID}
-            >Visit Site<span class="text-nav-cyan">.</span>
-            <span class="{projectClassName} opacity-0">
-              <svg
-                width="154"
-                height="28"
-                viewBox="0 0 154 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-auto -mt-6 h-6"
-              >
-                <path
-                  d="M0 25.5H125L152.5 3"
-                  stroke="#4484ff"
-                  stroke-width="4"
-                  class={className}
-                />
-                <path
-                  d="M135 3H151V19"
-                  stroke="#4484ff"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class={className}
-                />
-              </svg>
-            </span>
-          </button>
+          <a href={projectLink} target="_blank">
+            <button
+              class="uppercase font-bold text-left transition-all text-xl"
+              id={btnID}
+              >Visit Site<span class="text-nav-cyan">.</span>
+              <span class="{projectClassName} opacity-0">
+                <svg
+                  width="154"
+                  height="28"
+                  viewBox="0 0 154 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-auto -mt-6 h-6"
+                >
+                  <path
+                    d="M0 25.5H125L152.5 3"
+                    stroke="#4484ff"
+                    stroke-width="4"
+                    class={className}
+                  />
+                  <path
+                    d="M135 3H151V19"
+                    stroke="#4484ff"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class={className}
+                  />
+                </svg>
+              </span>
+            </button></a
+          >
         </div>
       </div>
     </div>
