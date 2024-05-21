@@ -10,10 +10,12 @@
         <p class="uppercase text-3xl">Navigation</p>
 
         <div class="leading-relaxed mt-5 text-xl">
-          <p>Home</p>
-          <p>About</p>
-          <p>Work</p>
-          <p>Connect</p>
+          <a href="/"><button>Home</button></a><br />
+          <a href="/About"><button>About</button></a><br />
+          <a href="/Work"><button>Work</button></a><br />
+          <a href="/Contact">
+            <button>Connect</button>
+          </a>
         </div>
       </div>
       <div class="resources lg:mt-5 ml-5">
@@ -29,9 +31,21 @@
         <p class="uppercase text-3xl">LINKS</p>
 
         <div class="leading-relaxed mt-5 text-xl">
-          <p>Github</p>
-          <p>Twitter</p>
-          <p>Mail</p>
+          <a href="https://github.com/panchalbhavya2210" target="_blank">
+            <button>Github</button>
+          </a>
+          <br />
+          <a href="https://x.com/panchalbhavya22" target="_blank">
+            <button>Twitter</button>
+          </a>
+          <br />
+          <a
+            href="https://www.linkedin.com/in/bhavya-panchal-83a6a4296/"
+            target="_blank"
+          >
+            <button>LinkedIn</button>
+          </a>
+          <br />
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@
   export let logo;
   export let classNa;
 
-  const sensitivity = 1.5; // Adjust this value to increase sensitivity
+  const sensitivity = 1; // Adjust this value to increase sensitivity
 
   onMount(() => {
     let grabElement = document.querySelectorAll(".skill");
@@ -62,7 +62,7 @@
   }
 
   .skill:hover {
-    transform: rotateY(5deg) rotateX(5deg) scale(1.3);
+    transform: rotateY(5deg) rotateX(5deg) scale(1.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border: 0;
   }

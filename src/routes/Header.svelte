@@ -157,16 +157,18 @@
     class="w-11/12 fixHeight h-[70px] mx-auto bg-nav-cyan bg-opacity-85 text-white backdrop-blur-md p-3 rounded-lg mt-5 overflow-hidden fixed-container sm:h-[70px] md:h-[70px] lg:h-[70px]"
   >
     <div class="flex justify-between items-center">
-      <img src={Logo} class="w-auto h-10" alt="" />
+      <a href="/">
+        <img src={Logo} class="w-auto h-10" alt="logo" />
+      </a>
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <!-- svelte-ignore a11y-no-static-element-interactions -->
       <div
         class="burger sm:hidden md:hidden lg:hidden cursor-pointer"
         on:click={toggleMenu}
       >
-        <div class="bar w-10 bg-main-cyan h-0.5 my-2 mr-2 rounded-md"></div>
-        <div class="bar w-10 bg-main-cyan h-0.5 my-2 mr-2 rounded-md"></div>
-        <div class="bar w-10 bg-main-cyan h-0.5 my-2 mr-2 rounded-md"></div>
+        <div class="bar w-10 bg-bgbg-white h-0.5 my-2 mr-2 rounded-md"></div>
+        <div class="bar w-10 bg-bgbg-white h-0.5 my-2 mr-2 rounded-md"></div>
+        <div class="bar w-10 bg-bgbg-white h-0.5 my-2 mr-2 rounded-md"></div>
       </div>
       <div
         class="links relative sm:justify-between lg:w-6/12 md:w-96 sm:w-9/12 sm:flex md:flex lg:flex hidden mr-5 text-xl"
@@ -259,7 +261,7 @@
     left: 0;
     width: 100%;
     height: 0%;
-    background-color: #4484ff;
+    background-color: #f9fcf3;
     opacity: 100%;
     z-index: -1;
     transition: all 0.3s;
@@ -274,7 +276,7 @@
     left: 0;
     width: 100%;
     height: 0%;
-    background-color: #4484ff;
+    background-color: #f9fcf3;
     opacity: 100%;
     z-index: -1;
     transition: all 0.3s;
@@ -288,10 +290,10 @@
     top: 00%;
   }
   .aria[aria-current="page"] {
-    border-bottom: 1px solid #4484ff;
+    border-bottom: 1px solid #fff;
   }
   .aria-mobile[aria-current="page"] {
-    border-left: 2px solid #4484ff;
+    border-left: 2px solid #fff;
   }
   .link-ani:hover::before,
   .link-ani:hover {

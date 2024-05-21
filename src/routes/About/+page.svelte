@@ -56,40 +56,58 @@
       );
     });
 
-    const opt = {
-      threshold: 0.3,
-    };
-    const sections = document.querySelectorAll(".sectionAbout");
-    const cards = document.querySelectorAll(".hello");
+    // const opt = {
+    //   threshold: 0.3,
+    // };
+    // const sections = document.querySelectorAll(".sectionAbout");
+    // const cards = document.querySelectorAll(".hello");
 
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (entry.target.classList.contains("skill")) {
-            cards.forEach((para, ind) => {
-              gsap.to(para, {
-                scale: 1,
-                duration: 0.5 + ind * 0.2,
-                delay: 0,
-                onComplete: () => {
-                  obs.disconnect();
-                },
-              });
-            });
-          }
-        } else {
-        }
-      });
-    }, opt);
+    // const obs = new IntersectionObserver((entries) => {
+    //   entries.forEach((entry) => {
+    //     if (entry.isIntersecting) {
+    //       if (entry.target.classList.contains("skill")) {
+    //         cards.forEach((para, ind) => {
+    //           gsap.to(para, {
+    //             scale: 1,
+    //             duration: 0.5 + ind * 0.2,
+    //             delay: 0,
+    //             onComplete: () => {
+    //               obs.disconnect();
+    //             },
+    //           });
+    //         });
+    //       }
+    //     } else {
+    //     }
+    //   });
+    // }, opt);
 
-    sections.forEach((sect) => {
-      obs.observe(sect);
-    });
+    // sections.forEach((sect) => {
+    //   obs.observe(sect);
+    // });
   });
+
+  function scrollTo() {
+    const newY = document.querySelector("#section-next").offsetTop - 100;
+    gsap.to(window, {
+      duration: 0.7,
+      scrollTo: {
+        y: newY,
+      },
+      ease: "power1.inOut",
+    });
+  }
 </script>
 
 <main>
-  <div class="svgContainer w-full h-lvh">
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <div
+    class="svgContainer w-full h-lvh"
+    on:click={scrollTo}
+    role="button"
+    tabindex="0"
+    aria-label="Click to scroll"
+  >
     <svg
       width="1512"
       height="209"
@@ -122,7 +140,7 @@
       />
     </svg>
   </div>
-  <div class="relative ml-5 sm:ml-8 md:ml-10 lg:ml-14">
+  <div class="relative ml-5 sm:ml-8 md:ml-10 lg:ml-14" id="section-next">
     <div class="flex text-3xl">
       <span class="border-l-4 border-l-main-cyan pl-3">About Me</span>
     </div>
@@ -135,9 +153,7 @@
           >
             <img src={MyImage} alt="" class="w-40 h-40 object-cover" />
           </div>
-          <div class="githubBtn mt-5">
-            <button>GITHUB PROFILE</button>
-          </div>
+          <div class="githubBtn mt-5"></div>
         </div>
       </div>
       <div
@@ -184,32 +200,28 @@
       <div
         class="grid md:grid-cols-5 lg:grid-cols-5 grid-cols-2 mt-5 md:gap-5 lg:gap-5 gap-8 mx-auto w-11/12 ml-0 justify-items-center lg:ml-5"
       >
-        <Skill name="HTML" logo={htmlLogo} classNa="hello scale-0" />
-        <Skill name="CSS" logo={cssLogo} classNa="hello scale-0" />
-        <Skill name="JavaScript" logo={jsLogo} classNa="hello scale-0" />
-        <Skill name="Figma" logo={figmaLogo} classNa="hello scale-0" />
-        <Skill name="Node JS" logo={nodeLogo} classNa="hello scale-0" />
-        <Skill name="Svelte JS" logo={svelteLogo} classNa="hello scale-0" />
-        <Skill name="Nuxt JS" logo={nuxtLogo} classNa="hello scale-0" />
-        <Skill name="Vue JS" logo={vueLogo} classNa="hello scale-0" />
-        <Skill name="Git" logo={gitLogo} classNa="hello scale-0" />
-        <Skill
-          name="Tailwind CSS"
-          logo={tailwindLogo}
-          classNa="hello scale-0"
-        />
-        <Skill name="Chart JS" logo={chartLogo} classNa="hello scale-0" />
-        <Skill name="Supabase" logo={supabaseLogo} classNa="hello scale-0" />
-        <Skill name="Firebase" logo={firebaseLogo} classNa="hello scale-0" />
-        <Skill name="PHP" logo={phpLogo} classNa="hello scale-0" />
-        <Skill name="Socket IO" logo={socketLogo} classNa="hello scale-0" />
-        <Skill name="Python" logo={pythonLogo} classNa="hello scale-0" />
-        <Skill name="django" logo={djangoLogo} classNa="hello scale-0" />
-        <Skill name="Vercel" logo={vercelLogo} classNa="hello scale-0" />
-        <Skill name="Flutter" logo={flutterLogo} classNa="hello scale-0" />
-        <Skill name="Dart" logo={dartLogo} classNa="hello scale-0" />
-        <Skill name="GSAP" logo={gsapLogo} classNa="hello scale-0" />
-        <Skill name="Kotlin" logo={kotlinLogo} classNa="hello scale-0" />
+        <Skill name="HTML" logo={htmlLogo} classNa="hello" />
+        <Skill name="CSS" logo={cssLogo} classNa="hello" />
+        <Skill name="JavaScript" logo={jsLogo} classNa="hello" />
+        <Skill name="Figma" logo={figmaLogo} classNa="hello" />
+        <Skill name="Node JS" logo={nodeLogo} classNa="hello" />
+        <Skill name="Svelte JS" logo={svelteLogo} classNa="hello" />
+        <Skill name="Nuxt JS" logo={nuxtLogo} classNa="hello" />
+        <Skill name="Vue JS" logo={vueLogo} classNa="hello" />
+        <Skill name="Git" logo={gitLogo} classNa="hello" />
+        <Skill name="Tailwind CSS" logo={tailwindLogo} classNa="hello" />
+        <Skill name="Chart JS" logo={chartLogo} classNa="hello" />
+        <Skill name="Supabase" logo={supabaseLogo} classNa="hello" />
+        <Skill name="Firebase" logo={firebaseLogo} classNa="hello" />
+        <Skill name="PHP" logo={phpLogo} classNa="hello" />
+        <Skill name="Socket IO" logo={socketLogo} classNa="hello" />
+        <Skill name="Python" logo={pythonLogo} classNa="hello" />
+        <Skill name="django" logo={djangoLogo} classNa="hello" />
+        <Skill name="Vercel" logo={vercelLogo} classNa="hello" />
+        <Skill name="Flutter" logo={flutterLogo} classNa="hello" />
+        <Skill name="Dart" logo={dartLogo} classNa="hello" />
+        <Skill name="GSAP" logo={gsapLogo} classNa="hello" />
+        <Skill name="Kotlin" logo={kotlinLogo} classNa="hello" />
       </div>
       <!-- </div> -->
     </div>

@@ -146,7 +146,14 @@
 </script>
 
 <main>
-  <div class="w-full h-lvh" on:click={scrollTo}>
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <div
+    aria-label="Click to scroll"
+    role="button"
+    tabindex="0"
+    class="w-full h-lvh"
+    on:click={scrollTo}
+  >
     <svg
       width="1512"
       height="209"
