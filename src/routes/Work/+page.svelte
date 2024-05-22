@@ -145,6 +145,11 @@
   }
 </script>
 
+<svelte:head>
+  <title>Projects • Bhavya</title>
+  <meta name="description" content="Bhavya Panchal's Portfolio" />
+</svelte:head>
+
 <main>
   <!-- svelte-ignore a11y-click-events-have-key-events -->
   <div
