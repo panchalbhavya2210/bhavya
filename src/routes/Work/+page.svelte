@@ -23,12 +23,10 @@
       gsap.fromTo(
         path,
         {
-          // Set initial stroke-dasharray to the length of the path
           "stroke-dasharray": path.getTotalLength(),
           "stroke-dashoffset": path.getTotalLength(),
         },
         {
-          // Animate stroke-dashoffset to 0
           "stroke-dashoffset": 0,
           duration: 1 + index * 2,
           ease: "power1.inOut",
@@ -96,7 +94,6 @@
       opaqueArrow(svgEl);
     }
 
-    // Function to handle mouse leave event
     function handleMouseLeave(pathSelector) {
       const svgEl = document.querySelectorAll(pathSelector);
       disopaqueArrow(svgEl, true);
@@ -107,14 +104,12 @@
         gsap.fromTo(
           path,
           {
-            // Set initial stroke-dasharray to the length of the path
             "stroke-dasharray": path.getTotalLength(),
             "stroke-dashoffset": path.getTotalLength(),
           },
           {
-            // Animate stroke-dashoffset to 0
             "stroke-dashoffset": 0,
-            duration: 0.5 + index * 0.1, // Adjust duration for staggered effect
+            duration: 0.5 + index * 0.1,
             ease: "power1.inOut",
             opacity: 1,
           }

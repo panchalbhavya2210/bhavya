@@ -5,7 +5,7 @@
   export let logo;
   export let classNa;
 
-  const sensitivity = 1; // Adjust this value to increase sensitivity
+  const sensitivity = 1;
 
   onMount(() => {
     let grabElement = document.querySelectorAll(".skill");

@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <main>
   <div class="p-5 md:lg-p-11 lg:p-11 relative bottom-10 top-10 text-white">
     <div

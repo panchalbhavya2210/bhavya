@@ -20,12 +20,10 @@
       gsap.fromTo(
         path,
         {
-          // Set initial stroke-dasharray to the length of the path
           "stroke-dasharray": path.getTotalLength(),
           "stroke-dashoffset": path.getTotalLength(),
         },
         {
-          // Animate stroke-dashoffset to 0
           "stroke-dashoffset": 0,
           duration: 1 + index * 2,
           ease: "power1.inOut",

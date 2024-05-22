@@ -28,8 +28,6 @@
   import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
   import Observer from "gsap/dist/Observer";
   import { onMount } from "svelte";
-  import { scale } from "svelte/transition";
-  import workExp from "../../lib/assets/image.png";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
   onMount(() => {
@@ -37,54 +35,21 @@
 
     const paths = document.querySelectorAll(".paths-home");
 
-    // Animate stroke of each path
     paths.forEach((path, index) => {
       gsap.fromTo(
         path,
         {
-          // Set initial stroke-dasharray to the length of the path
           "stroke-dasharray": path.getTotalLength(),
           "stroke-dashoffset": path.getTotalLength(),
         },
         {
-          // Animate stroke-dashoffset to 0
           "stroke-dashoffset": 0,
-          duration: 1 + index * 2, // Adjust duration for staggered effect
+          duration: 1 + index * 2,
           ease: "power1.inOut",
           opacity: 1,
         }
       );
     });
-
-    // const opt = {
-    //   threshold: 0.3,
-    // };
-    // const sections = document.querySelectorAll(".sectionAbout");
-    // const cards = document.querySelectorAll(".hello");
-
-    // const obs = new IntersectionObserver((entries) => {
-    //   entries.forEach((entry) => {
-    //     if (entry.isIntersecting) {
-    //       if (entry.target.classList.contains("skill")) {
-    //         cards.forEach((para, ind) => {
-    //           gsap.to(para, {
-    //             scale: 1,
-    //             duration: 0.5 + ind * 0.2,
-    //             delay: 0,
-    //             onComplete: () => {
-    //               obs.disconnect();
-    //             },
-    //           });
-    //         });
-    //       }
-    //     } else {
-    //     }
-    //   });
-    // }, opt);
-
-    // sections.forEach((sect) => {
-    //   obs.observe(sect);
-    // });
   });
 
   function scrollTo() {
@@ -105,7 +70,6 @@
 </svelte:head>
 
 <main>
-  <!-- svelte-ignore a11y-click-events-have-key-events -->
   <div
     class="svgContainer w-full h-lvh"
     on:click={scrollTo}
