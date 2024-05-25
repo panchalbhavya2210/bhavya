@@ -15,6 +15,7 @@
     nuxtLogo,
     tailwindLogo,
     fireBaseLogo,
+    flutterLogo,
     projectDisc,
     projectLink;
 </script>
@@ -144,6 +145,21 @@
                 fill="black"
               />
             </svg>
+
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 {flutterLogo ? 'block' : 'hidden'}"
+            >
+              <path
+                d="M12.2916 32.0312L5.20825 24.9999L28.1249 2.08325H42.2395L12.2916 32.0312ZM28.1249 47.9166L15.7812 35.5728L28.1249 23.2291H42.2395L29.8958 35.5728L42.2395 47.9166H28.1249Z"
+                fill="black"
+              />
+            </svg>
+
             <!-- nuxt logo -->
             <svg
               width="24"

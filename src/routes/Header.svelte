@@ -204,7 +204,7 @@
               ? "page"
               : undefined}
           >
-            Connect
+            Contact
           </div>
         </a>
       </div>
@@ -226,7 +226,7 @@
           About Me
         </div>
       </a>
-      <a href="/">
+      <a href="/Work">
         <div
           class="link2 link-ani-mob p-2 aria-mobile my-5"
           aria-current={$page.url.pathname === "/Work" ? "page" : undefined}
@@ -234,12 +234,12 @@
           My Work
         </div>
       </a>
-      <a href="/">
+      <a href="/Contact">
         <div
           class="link3 link-ani-mob p-2 aria-mobile my-5"
-          aria-current={$page.url.pathname === "/Connect" ? "page" : undefined}
+          aria-current={$page.url.pathname === "/Contact" ? "page" : undefined}
         >
-          Connect
+          Contact
         </div>
       </a>
     </div>

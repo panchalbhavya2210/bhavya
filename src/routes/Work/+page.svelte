@@ -14,6 +14,7 @@
   import Random from "../../lib/assets/random.svg";
   import gCom from "../../lib/assets/gift-django.svg";
   import shop from "../../lib/assets/shop.svg";
+  import stock from "../../lib/assets/stock.svg";
 
   onMount(() => {
     gsap.registerPlugin(TextPlugin, ScrollToPlugin, Observer, ScrollTrigger);
@@ -285,6 +286,16 @@
         tailwindLogo
         fireBaseLogo
         projectLink="https://byte-blog.vercel.app"
+      />
+      <Project
+        projectTitle="Stock Average Calc."
+        projectIcon={stock}
+        projectClassName="prjEight"
+        className="classEight"
+        btnID="btnEight"
+        flutterLogo
+        projectDisc="This is a stock average calculator. This app uses Flutter, which makes it useful for user to calculate stock average."
+        projectLink="https://github.com/panchalbhavya2210/stock_average_flutter"
       />
     </div>
   </div>
