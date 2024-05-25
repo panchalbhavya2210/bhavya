@@ -35,7 +35,7 @@
           <div class="para">
             <p class="text-black ml-5 text-xl font-bold">{projectTitle}</p>
           </div>
-          <div class="flex ml-5 mt-1 w-24 justify-evenly relative">
+          <div class="flex ml-5 mt-1 w-24 justify-start relative">
             <!-- html logo -->
             <svg
               width="24"
