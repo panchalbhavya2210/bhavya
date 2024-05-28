@@ -386,12 +386,12 @@
       </div>
     </div>
     <div class="textData text-center mt-4 text-3xl">
-      <p>Full-Stack Developer.</p>
+      <p>Front-end Developer.</p>
     </div>
     <div class="textData w-full flex justify-center mt-4 text-2xl">
       <span class="lg:px-4 lg:w-3/5 text-center px-4">
         <p>
-          I am a full-stack web developer with a passion for creating unique
+          I am a front end web developer with a passion for creating unique
           websites.
         </p>
         <br class="lg:hidden" />
