@@ -53,6 +53,7 @@
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <!-- svelte-ignore a11y-click-events-have-key-events -->
+
   <div
     class="w-full h-lvh"
     on:click={scrollTo}

@@ -4,20 +4,20 @@
   export let projectClassName;
   export let className;
   export let btnID;
-  export let svelteLogo,
-    supabaseLogo,
-    htmlLogo,
-    cssLogo,
-    jsLogo,
-    apiLogo,
-    djangoLogo,
-    python,
-    nuxtLogo,
-    tailwindLogo,
-    fireBaseLogo,
-    flutterLogo,
-    projectDisc,
-    projectLink;
+  export let svelteLogo = null,
+    supabaseLogo = null,
+    htmlLogo = null,
+    cssLogo = null,
+    jsLogo = null,
+    apiLogo = null,
+    djangoLogo = null,
+    python = null,
+    nuxtLogo = null,
+    tailwindLogo = null,
+    fireBaseLogo = null,
+    flutterLogo = null,
+    projectDisc = null,
+    projectLink = null;
 </script>
 
 <main>

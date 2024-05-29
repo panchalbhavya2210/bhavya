@@ -10,7 +10,6 @@
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".trigger",
         start: "top top",
         end: "+=10",
         scrub: 0.5,
@@ -20,8 +19,6 @@
       width: "95%",
       marginTop: 10,
     });
-
-    gsap.to(".box", { opacity: 1, duration: 0.7 });
 
     gsap.from(".link", {
       opacity: 1,

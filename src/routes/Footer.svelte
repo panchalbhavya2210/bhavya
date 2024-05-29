@@ -7,11 +7,29 @@
         <p class="uppercase text-3xl">Navigation</p>
 
         <div class="leading-relaxed mt-5 text-xl">
-          <a href="/"><button>Home</button></a><br />
-          <a href="/About"><button>About</button></a><br />
-          <a href="/Work"><button>Work</button></a><br />
+          <a href="/"
+            ><button
+              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
+              >Home</button
+            ></a
+          ><br />
+          <a href="/About"
+            ><button
+              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
+              >About</button
+            ></a
+          ><br />
+          <a href="/Work"
+            ><button
+              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
+              >Work</button
+            ></a
+          ><br />
           <a href="/Contact">
-            <button>Connect</button>
+            <button
+              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
+              >Connect</button
+            >
           </a>
         </div>
       </div>
@@ -19,9 +37,26 @@
         <p class="uppercase text-3xl">RESOURCES</p>
 
         <div class="leading-relaxed mt-5 text-xl">
-          <p>Font : Della Respira</p>
-          <p>Icon : Iconify</p>
-          <p>Desing : Figma</p>
+          <a
+            href="https://fonts.google.com/specimen/Della+Respira"
+            target="_blank"
+            ><button
+              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
+              >Font : Della Respira</button
+            ></a
+          ><br />
+          <a href="https://iconify.design" target="_blank">
+            <button
+              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
+              >Icon : Iconify.design</button
+            ></a
+          ><br />
+          <a href="https://figma.com" target="_blank"
+            ><button
+              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
+              >Design : Figma</button
+            ></a
+          >
         </div>
       </div>
       <div class="links lg:mt-5 lg:mr-5 ml-5">
@@ -29,18 +64,27 @@
 
         <div class="leading-relaxed mt-5 text-xl">
           <a href="https://github.com/panchalbhavya2210" target="_blank">
-            <button>Github</button>
+            <button
+              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
+              >Github</button
+            >
           </a>
           <br />
           <a href="https://x.com/panchalbhavya22" target="_blank">
-            <button>Twitter</button>
+            <button
+              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
+              >Twitter</button
+            >
           </a>
           <br />
           <a
             href="https://www.linkedin.com/in/bhavya-panchal-83a6a4296/"
             target="_blank"
           >
-            <button>LinkedIn</button>
+            <button
+              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
+              >LinkedIn</button
+            >
           </a>
           <br />
         </div>
