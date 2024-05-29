@@ -119,19 +119,19 @@
       />
       <path
         d="M-49 136.973C69.164 92.1132 143.109 78.7636 269.5 79.4728C422.483 80.3312 498.092 163.609 651 168.473C828.135 174.107 918.968 71.2082 1096 79.4728C1268.09 87.5066 1519.5 202.973 1519.5 202.973"
-        stroke="#4484FF"
+        stroke="#44ff"
         stroke-width="5"
         class="paths-home"
       />
       <path
         d="M-90 174.5C-90 174.5 96.1362 88.5477 223 87.5C332.387 86.5966 387.296 141.618 496.5 148C645.165 156.688 724.092 85.7373 873 87.5C1011.7 89.1419 1084.46 154.866 1223 148C1359.26 141.247 1560 56 1560 56"
-        stroke="#4484FF"
+        stroke="#44ff"
         stroke-width="5"
         class="paths-home"
       />
       <path
         d="M-28 115.104C90.164 70.2443 177.109 204.922 303.5 205.631C456.483 206.489 519.092 74.2676 672 79.131C849.135 84.7649 932.962 132.879 1103.5 181.104C1264.5 226.631 1540.5 181.104 1540.5 181.104"
-        stroke="#4484FF"
+        stroke="#44ff"
         stroke-width="5"
         class="paths-home"
       />
@@ -247,8 +247,8 @@
             class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
-            <path d="M20.5 21V145" stroke="#4484FF" stroke-width="5" />
-            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+            <path d="M20.5 21V145" stroke="#44ff" stroke-width="5" />
+            <circle cx="21" cy="21" r="13" fill="#44ff" />
           </svg>
 
           <div class="w-11/12 ml-3">
@@ -272,7 +272,7 @@
             class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
-            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+            <circle cx="21" cy="21" r="13" fill="#44ff" />
           </svg>
 
           <div class="w-11/12 ml-3">
@@ -309,8 +309,8 @@
             class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
-            <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
-            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+            <path d="M20.5 21V123.5" stroke="#44ff" stroke-width="5" />
+            <circle cx="21" cy="21" r="13" fill="#44ff" />
           </svg>
 
           <div class="w-full ml-3">
@@ -331,8 +331,8 @@
             class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
-            <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
-            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+            <path d="M20.5 21V123.5" stroke="#44ff" stroke-width="5" />
+            <circle cx="21" cy="21" r="13" fill="#44ff" />
           </svg>
 
           <div class="w-full ml-3">
@@ -353,8 +353,8 @@
             class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
-            <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
-            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+            <path d="M20.5 21V123.5" stroke="#44ff" stroke-width="5" />
+            <circle cx="21" cy="21" r="13" fill="#44ff" />
           </svg>
 
           <div class="w-full ml-3">
@@ -375,8 +375,8 @@
             class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
-            <path d="M20.5 21V123.5" stroke="#4484FF" stroke-width="5" />
-            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+            <path d="M20.5 21V123.5" stroke="#44ff" stroke-width="5" />
+            <circle cx="21" cy="21" r="13" fill="#44ff" />
           </svg>
 
           <div class="w-full ml-3">
@@ -399,7 +399,7 @@
             class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
-            <circle cx="21" cy="21" r="13" fill="#4484FF" />
+            <circle cx="21" cy="21" r="13" fill="#44ff" />
           </svg>
 
           <div class="w-full ml-3">
