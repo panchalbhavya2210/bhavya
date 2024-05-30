@@ -141,7 +141,7 @@
         rotate: 0,
       });
       gsap.to(".fixHeight", {
-        height: "70px",
+        height: "60px",
         duration: 1,
         ease: "power2.inOut",
       });
@@ -151,7 +151,7 @@
 
 <main>
   <div
-    class="w-11/12 fixHeight h-[70px] mx-auto bg-nav-cyan bg-opacity-85 text-white backdrop-blur-md p-3 rounded-lg mt-5 overflow-hidden fixed-container sm:h-[70px] md:h-[70px] lg:h-[70px]"
+    class="w-11/12 fixHeight h-[nav-20] mx-auto bg-nav-cyan bg-opacity-85 text-white backdrop-blur-md p-3 rounded-lg mt-5 overflow-hidden fixed-container sm:h-[70px] md:h-[70px] lg:h-[70px]"
   >
     <div class="flex justify-between items-center">
       <a href="/">

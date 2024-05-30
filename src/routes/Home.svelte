@@ -464,7 +464,7 @@
             </div>
             <div class="">
               <div class="para">
-                <p class="text-black ml-5 text-xl font-bold">E-commerce Site</p>
+                <p class="text-white ml-5 text-xl font-bold">E-commerce Site</p>
               </div>
             </div>
           </div>
@@ -529,7 +529,7 @@
                 />
               </svg>
             </div>
-            <p class="text-black ml-5 text-xl font-bold">Weather Site</p>
+            <p class="text-white ml-5 text-xl font-bold">Weather Site</p>
           </div>
           <div class="projectDisc px-4 text-xl">
             This website shows weather off different areas and also of your own
@@ -590,7 +590,7 @@
                 />
               </svg>
             </div>
-            <p class="text-black ml-5 text-xl font-bold">Assignment Site</p>
+            <p class="text-white ml-5 text-xl font-bold">Assignment Site</p>
           </div>
           <div class="projectDisc px-4 text-xl">
             This is an assignment site. This site uses HTML, CSS, and JS, which
