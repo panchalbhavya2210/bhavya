@@ -1,3 +1,7 @@
+<script>
+  import { page } from "$app/stores";
+</script>
+
 <main>
   <div class="p-5 md:lg-p-11 lg:p-11 relative bottom-10 top-10 text-white">
     <div
@@ -89,6 +93,20 @@
           <br />
         </div>
       </div>
+    </div>
+    <div
+      class="infrig w-full text-black opacity-50 {$page.url.pathname ===
+        '/About' ||
+      $page.url.pathname === '/Work' ||
+      $page.url.pathname === '/Contact'
+        ? 'block'
+        : 'hidden'}"
+    >
+      The logos and trademarks used on this portfolio are the property of their
+      respective owners. These logos are used here solely to represent the
+      skills and technologies I am proficient in. This usage does not imply any
+      affiliation, sponsorship, or endorsement by the respective companies. All
+      logos and trademarks are owned by their respective companies.
     </div>
   </div>
 </main>
