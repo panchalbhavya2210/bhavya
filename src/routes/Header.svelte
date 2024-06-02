@@ -1,7 +1,6 @@
 <script>
   import Logo from "../lib/assets/logo.svg";
   import { page } from "$app/stores";
-
   import gsap from "gsap";
   import { onMount } from "svelte";
   import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -78,6 +77,7 @@
       );
     });
   });
+
   let isOpen = false;
 
   function toggleMenu() {
@@ -151,7 +151,7 @@
 
 <main>
   <div
-    class="w-11/12 fixHeight h-[nav-20] mx-auto bg-nav-cyan bg-opacity-85 text-white backdrop-blur-md p-3 rounded-lg mt-5 overflow-hidden fixed-container sm:h-[70px] md:h-[70px] lg:h-[70px]"
+    class="w-11/12 fixHeight h-[70px] mx-auto bg-nav-cyan bg-opacity-85 text-white backdrop-blur-md p-3 rounded-lg mt-5 overflow-hidden fixed-container sm:h-[70px] md:h-[70px] lg:h-[70px]"
   >
     <div class="flex justify-between items-center">
       <a href="/">
@@ -191,7 +191,7 @@
             class="link2 link-ani p-2 aria relative"
             aria-current={$page.url.pathname === "/Work" ? "page" : undefined}
           >
-            My Work
+            My Projects
           </div>
         </a>
         <a href="/Contact">
@@ -207,7 +207,7 @@
       </div>
     </div>
     <div class="mobile-menu sm:hidden md:hidden lg:hidden">
-      <a href="/">
+      <a href="/" on:click={toggleMenu}>
         <div
           class="link link-ani-mob p-2 aria-mobile my-5 mt-10"
           aria-current={$page.url.pathname === "/" ? "page" : undefined}
@@ -215,7 +215,7 @@
           Home
         </div>
       </a>
-      <a href="/About">
+      <a href="/About" on:click={toggleMenu}>
         <div
           class="link1 link-ani-mob p-2 aria-mobile my-5"
           aria-current={$page.url.pathname === "/About" ? "page" : undefined}
@@ -223,15 +223,15 @@
           About Me
         </div>
       </a>
-      <a href="/Work">
+      <a href="/Work" on:click={toggleMenu}>
         <div
           class="link2 link-ani-mob p-2 aria-mobile my-5"
           aria-current={$page.url.pathname === "/Work" ? "page" : undefined}
         >
-          My Work
+          My Projects
         </div>
       </a>
-      <a href="/Contact">
+      <a href="/Contact" on:click={toggleMenu}>
         <div
           class="link3 link-ani-mob p-2 aria-mobile my-5"
           aria-current={$page.url.pathname === "/Contact" ? "page" : undefined}

@@ -77,6 +77,11 @@
         classPrefix: "prjEight",
         pathSelector: ".classEight",
       },
+      {
+        id: "btnNine",
+        classPrefix: "prjNine",
+        pathSelector: ".classNine",
+      },
     ];
 
     btn.forEach((button) => {
@@ -320,9 +325,9 @@
       <Project
         projectTitle="Stock Average Calc."
         projectIcon={stock}
-        projectClassName="prjEight"
-        className="classEight"
-        btnID="btnEight"
+        projectClassName="prjNine"
+        className="classNine"
+        btnID="btnNine"
         flutterLogo
         projectDisc="This is a stock average calculator. This app uses Flutter, which makes it useful for user to calculate stock average."
         projectLink="https://github.com/panchalbhavya2210/stock_average_flutter"

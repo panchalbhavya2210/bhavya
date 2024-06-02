@@ -13,6 +13,7 @@ export default {
     extend: {
       spacing: {
         "nav-20": "70px",
+        20: "70px",
       },
     },
   },

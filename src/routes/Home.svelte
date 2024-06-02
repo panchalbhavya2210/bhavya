@@ -48,6 +48,21 @@
         classPrefix: "pathingExplore",
         pathSelector: ".path-arr",
       },
+      {
+        id: "eBtn",
+        classPrefix: "eComClass",
+        pathSelector: ".eClass",
+      },
+      {
+        id: "wBtn",
+        classPrefix: "wComClass",
+        pathSelector: ".wClass",
+      },
+      {
+        id: "aBtn",
+        classPrefix: "aComClass",
+        pathSelector: ".aClass",
+      },
     ];
 
     buttons.forEach((button) => {
@@ -100,7 +115,7 @@
     }
 
     const opt = {
-      threshold: 0.3,
+      threshold: 0.2,
     };
 
     const sections = document.querySelectorAll(".sections");
@@ -476,8 +491,9 @@
               <a href="https://e-commerce-try.vercel.app" target="_blank">
                 <button
                   class="uppercase font-bold text-left transition-all text-xl"
+                  id="eBtn"
                   >Visit Site<span class="text-nav-cyan">.</span>
-                  <span class=" opacity-0">
+                  <span class="eComClass opacity-0">
                     <svg
                       width="154"
                       height="28"
@@ -490,6 +506,7 @@
                         d="M0 25.5H125L152.5 3"
                         stroke="#44ff"
                         stroke-width="4"
+                        class="eClass"
                       />
                       <path
                         d="M135 3H151V19"
@@ -497,6 +514,7 @@
                         stroke-width="5"
                         stroke-linecap="round"
                         stroke-linejoin="round"
+                        class="eClass"
                       />
                     </svg>
                   </span>
@@ -538,8 +556,9 @@
               <a href="https://temp-cast.netlify.app" target="_blank">
                 <button
                   class="uppercase font-bold text-left transition-all text-xl"
+                  id="wBtn"
                   >Visit Site<span class="text-nav-cyan">.</span>
-                  <span class=" opacity-0">
+                  <span class="wComClass opacity-0">
                     <svg
                       width="154"
                       height="28"
@@ -552,6 +571,7 @@
                         d="M0 25.5H125L152.5 3"
                         stroke="#44ff"
                         stroke-width="4"
+                        class="wClass"
                       />
                       <path
                         d="M135 3H151V19"
@@ -559,6 +579,7 @@
                         stroke-width="5"
                         stroke-linecap="round"
                         stroke-linejoin="round"
+                        class="wClass"
                       />
                     </svg>
                   </span>
@@ -599,8 +620,34 @@
               <a href="https://dochoster.netlify.app" target="_blank">
                 <button
                   class="uppercase font-bold text-left transition-all text-xl"
+                  id="aBtn"
                   >Visit Site<span class="text-nav-cyan">.</span>
-                </button></a
+                </button>
+                <span class="aComClass opacity-0">
+                  <svg
+                    width="154"
+                    height="28"
+                    viewBox="0 0 154 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-auto -mt-6 h-6"
+                  >
+                    <path
+                      d="M0 25.5H125L152.5 3"
+                      stroke="#44ff"
+                      stroke-width="4"
+                      class="aClass"
+                    />
+                    <path
+                      d="M135 3H151V19"
+                      stroke="#44ff"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="aClass"
+                    />
+                  </svg>
+                </span></a
               >
             </div>
           </div>
