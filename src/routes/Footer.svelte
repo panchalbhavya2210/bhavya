@@ -26,7 +26,7 @@
           <a href="/Work"
             ><button
               class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
-              >Work</button
+              >My Projects</button
             ></a
           ><br />
           <a href="/Contact">
