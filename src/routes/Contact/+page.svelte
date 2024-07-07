@@ -169,24 +169,7 @@
           </div>
         </div>
       </a>
-      <a
-        href="https://github.com/panchalbhavya2210"
-        target="_blank"
-        class="classHover w-11/12"
-      >
-        <div
-          class="lg:w-full w-11/12 h-24 hover:bg-[#44ff] hover:text-white transition-all border border-main-cyan rounded-lg flex justify-start items-center"
-        >
-          <!-- svelte-ignore a11y-missing-attribute -->
-          <div class="callLogo">
-            <img alt="instagram icon" src={ig} class="mx-5" />
-          </div>
-          <div class="text text-xl">
-            <p>Instagram.</p>
-            <p>onyx_bblack</p>
-          </div>
-        </div>
-      </a>
+     
       <a
         href="https://x.com/panchalbhavya22"
         target="_blank"
