@@ -101,10 +101,10 @@
     </svg>
   </div>
   <div id="section-next" class="ml-5 sm:ml-8 md:ml-10 lg:ml-14">
-    <div class="txtThanks font-bold text-4xl">
+    <div class="txtThanks font-bold text-4xl pr-3">
       <span class="text-nav-cyan">Thanks</span> <br /> For Viewing My Site.
     </div>
-    <div class="mt-3 text-xl w-10/12 md:w-11/12 lg:w-11/12">
+    <div class="mt-3 text-xl w-full md:w-11/12 lg:w-11/12">
       Thanks for spending your valuable time to view my site. If you've made it
       this far and you liked the work i did and want a website, you can contact
       me on below given details.
@@ -113,9 +113,9 @@
     <div
       class="w-full lg:pr-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-5 mt-5 justify-items-center"
     >
-      <a href="tel:+919081865254" target="_blank" class="classHover w-11/12">
+      <a href="tel:+919081865254" target="_blank" class="classHover w-full">
         <div
-          class="lg:w-full w-11/12 h-24 border border-main-cyan rounded-lg flex justify-start items-center hover:bg-[#44ff] hover:text-white transition-all"
+          class="lg:w-full w-11/12 h-24 border border-main-cyan rounded-lg flex justify-start items-center hover:bg-[#44ff] hover:text-white transition-all ml-1"
         >
           <!-- svelte-ignore a11y-missing-attribute -->
           <!-- svelte-ignore a11y-missing-attribute -->
@@ -131,10 +131,10 @@
       <a
         href="mailto:panchalbhavya2210@gmail.com"
         target="_blank"
-        class="classHover w-11/12"
+        class="classHover w-full"
       >
         <div
-          class="lg:w-full w-11/12 h-24 hover:bg-[#44ff] hover:text-white transition-all border border-main-cyan rounded-lg flex justify-start items-center"
+          class="lg:w-full w-11/12 h-24 hover:bg-[#44ff] hover:text-white transition-all border border-main-cyan rounded-lg flex justify-start items-center ml-1"
         >
           <!-- svelte-ignore a11y-missing-attribute -->
           <!-- svelte-ignore a11y-missing-attribute -->
@@ -153,10 +153,10 @@
       <a
         href="https://github.com/panchalbhavya2210"
         target="_blank"
-        class="classHover w-11/12"
+        class="classHover w-full"
       >
         <div
-          class="lg:w-full w-11/12 h-24 hover:bg-[#44ff] hover:text-white transition-all border border-main-cyan rounded-lg flex justify-start items-center"
+          class="lg:w-full w-11/12 h-24 hover:bg-[#44ff] hover:text-white transition-all border border-main-cyan rounded-lg flex justify-start items-center ml-1"
         >
           <!-- svelte-ignore a11y-missing-attribute -->
           <!-- svelte-ignore a11y-missing-attribute -->
@@ -169,14 +169,14 @@
           </div>
         </div>
       </a>
-     
+
       <a
         href="https://x.com/panchalbhavya22"
         target="_blank"
-        class="classHover w-11/12"
+        class="classHover w-full"
       >
         <div
-          class="lg:w-full w-11/12 h-24 hover:bg-[#44ff] hover:text-white transition-all border border-main-cyan rounded-lg flex justify-start items-center"
+          class="lg:w-full w-11/12 h-24 hover:bg-[#44ff] hover:text-white transition-all border border-main-cyan rounded-lg flex justify-start items-center ml-1"
         >
           <div class="callLogo">
             <!-- svelte-ignore a11y-missing-attribute -->
@@ -191,10 +191,10 @@
       <a
         href="https://www.linkedin.com/in/bhavya-panchal-83a6a4296/"
         target="_blank"
-        class="classHover w-11/12"
+        class="classHover w-full"
       >
         <div
-          class="lg:w-full w-11/12 h-24 border hover:bg-[#44ff] hover:text-white transition-all border-main-cyan rounded-lg flex justify-start items-center"
+          class="lg:w-full w-11/12 h-24 border hover:bg-[#44ff] hover:text-white transition-all border-main-cyan rounded-lg flex justify-start items-center ml-1"
         >
           <div class="callLogo">
             <img alt="linked in icon" src={linked} class="mx-5" />
@@ -208,10 +208,10 @@
       <a
         href="https://maps.app.goo.gl/GuJ7Qn9zeGqYKLGP6"
         target="_blank"
-        class="classHover w-11/12"
+        class="classHover w-full"
       >
         <div
-          class="lg:w-full w-11/12 h-24 border hover:bg-[#44ff] hover:text-white transition-all border-main-cyan rounded-lg flex justify-start items-center"
+          class="lg:w-full w-11/12 h-24 border hover:bg-[#44ff] hover:text-white transition-all border-main-cyan rounded-lg flex justify-start items-center ml-1"
         >
           <div class="callLogo">
             <img alt="map icon" src={map} class="mx-5" />

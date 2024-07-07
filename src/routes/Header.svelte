@@ -151,7 +151,7 @@
 
 <main>
   <div
-    class="w-11/12 fixHeight h-[70px] mx-auto bg-nav-cyan bg-opacity-85 text-white backdrop-blur-md p-3 rounded-lg mt-5 overflow-hidden fixed-container sm:h-[70px] md:h-[70px] lg:h-[70px]"
+    class="w-11/12 fixHeight h-[70px] mx-auto bg-nav-cyan shadow-lg bg-opacity-85 text-white backdrop-blur-md p-3 rounded-lg mt-5 overflow-hidden fixed-container sm:h-[70px] md:h-[70px] lg:h-[70px]"
   >
     <div class="flex justify-between items-center">
       <a href="/">
@@ -168,7 +168,7 @@
         <div class="bar w-10 bg-bgbg-white h-0.5 my-2 mr-2 rounded-md"></div>
       </div>
       <div
-        class="links relative sm:justify-between lg:w-6/12 md:w-96 sm:w-9/12 sm:flex md:flex lg:flex hidden mr-5 text-xl"
+        class="links relative sm:justify-between lg:w-6/12 md:w-7/12 sm:w-9/12 sm:flex md:flex lg:flex hidden mr-5 text-xl"
       >
         <a href="/">
           <div

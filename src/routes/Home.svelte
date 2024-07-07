@@ -446,7 +446,7 @@
     </div>
 
     <div class="textData text-center mt-5 text-xl">
-      <p>
+      <p class="px-4">
         This is a list of some side projects I have created as practical
         practice.
       </p>

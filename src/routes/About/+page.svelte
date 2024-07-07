@@ -16,7 +16,6 @@
   import nuxtLogo from "../../lib/icons/nuxt.svg";
   import phpLogo from "../../lib/icons/php.svg";
   import pythonLogo from "../../lib/icons/python.svg";
-  import socketLogo from "../../lib/icons/socket.svg";
   import vercelLogo from "../../lib/icons/vercel.svg";
   import vueLogo from "../../lib/icons/vue.svg";
   import flutterLogo from "../../lib/icons/flutter.svg";
@@ -98,6 +97,7 @@
 </svelte:head>
 
 <main>
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
   <div
     class="svgContainer w-full h-lvh"
     on:click={scrollTo}
@@ -215,7 +215,6 @@
         <Skill name="Supabase" logo={supabaseLogo} classNa="hello scale-0" />
         <Skill name="Firebase" logo={firebaseLogo} classNa="hello scale-0" />
         <Skill name="PHP" logo={phpLogo} classNa="hello scale-0" />
-        <Skill name="Socket IO" logo={socketLogo} classNa="hello scale-0" />
         <Skill name="Python" logo={pythonLogo} classNa="hello scale-0" />
         <Skill name="django" logo={djangoLogo} classNa="hello scale-0" />
         <Skill name="Vercel" logo={vercelLogo} classNa="hello scale-0" />
