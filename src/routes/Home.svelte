@@ -22,19 +22,16 @@
 
     const paths = document.querySelectorAll(".paths-home");
 
-    // Animate stroke of each path
     paths.forEach((path, index) => {
       gsap.fromTo(
         path,
         {
-          // Set initial stroke-dasharray to the length of the path
           "stroke-dasharray": path.getTotalLength(),
           "stroke-dashoffset": path.getTotalLength(),
         },
         {
-          // Animate stroke-dashoffset to 0
           "stroke-dashoffset": 0,
-          duration: 1 + index * 2, // Adjust duration for staggered effect
+          duration: 1 + index * 2,
           ease: "power1.inOut",
           opacity: 1,
           delay: 1,
@@ -89,14 +86,12 @@
         gsap.fromTo(
           path,
           {
-            // Set initial stroke-dasharray to the length of the path
             "stroke-dasharray": path.getTotalLength(),
             "stroke-dashoffset": path.getTotalLength(),
           },
           {
-            // Animate stroke-dashoffset to 0
             "stroke-dashoffset": 0,
-            duration: 0.5 + index * 0.1, // Adjust duration for staggered effect
+            duration: 0.5 + index * 0.1,
             ease: "power1.inOut",
             opacity: 1,
           }
@@ -164,12 +159,12 @@
     function waveHand() {
       gsap.to(".rotHand", {
         rotation: -5,
-        transformOrigin: "bottom right", // Set the transform origin to bottom center
+        transformOrigin: "bottom right",
         duration: 0.5,
-        repeat: -1, // Repeat indefinitely
-        yoyo: true, // Yoyo effect (back and forth)
-        ease: "power1.inOut", // Easing function
-        delay: 1, // Initial delay before animation starts
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut",
+        delay: 1,
       });
     }
     const handId = document.querySelector(".rotHand");
