@@ -15,6 +15,7 @@
   import gCom from "../../lib/assets/gift-django.svg";
   import shop from "../../lib/assets/shop.svg";
   import stock from "../../lib/assets/stock.svg";
+  import farmer from "../../lib/assets/farmer.svg";
 
   onMount(() => {
     gsap.registerPlugin(TextPlugin, ScrollToPlugin, Observer, ScrollTrigger);
@@ -81,6 +82,11 @@
         id: "btnNine",
         classPrefix: "prjNine",
         pathSelector: ".classNine",
+      },
+      {
+        id: "btnTen",
+        classPrefix: "prjTen",
+        pathSelector: ".clsTen",
       },
     ];
 
@@ -303,6 +309,16 @@
         projectDisc="This is a stock average calculator. This app uses Flutter, which makes it useful for user to calculate stock average."
         projectLink="https://github.com/panchalbhavya2210/stock_average_flutter"
       />
+      <Project
+        projectTitle="Farmer App(Design)"
+        flutterLogo
+        projectIcon={farmer}
+        projectClassName="prjTen"
+        className="clsTen"
+        btnID="btnTen"
+        projectDisc="This app is developed using flutter. I developed this app to learn some basic and some intermediate design elements in flutter."
+        projectLink="https://github.com/panchalbhavya2210/farm_commerce"
+      ></Project>
     </div>
   </div>
 </main>

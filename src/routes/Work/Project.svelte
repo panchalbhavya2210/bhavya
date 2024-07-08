@@ -27,15 +27,15 @@
         class="rectIconName w-11/12 h-20 bg-main-cyan mx-auto my-4 rounded-lg flex justify-start items-center"
       >
         <div
-          class="imgContainer w-16 h-16 bg-bgbg-white ml-2 rounded-full flex justify-center items-center"
+          class="imgContainer w-14 h-14 bg-bgbg-white ml-2 rounded-full flex justify-center items-center"
         >
-          <img src={projectIcon} alt="" />
+          <img src={projectIcon} alt="project logo" />
         </div>
         <div class="">
           <div class="para">
-            <p class="text-white ml-5 text-xl font-bold">{projectTitle}</p>
+            <p class="text-white ml-3 text-xl font-bold">{projectTitle}</p>
           </div>
-          <div class="flex ml-5 mt-1 w-24 justify-start relative">
+          <div class="flex ml-3 mt-1 w-24 justify-start relative">
             <!-- html logo -->
             <svg
               width="24"
@@ -230,7 +230,7 @@
         <div class="visit absolute bottom-5">
           <a href={projectLink} target="_blank">
             <button
-              class="uppercase font-bold text-left transition-all text-xl"
+              class="uppercase font-bold text-left transition-all text-lg"
               id={btnID}
               >Visit Site<span class="text-nav-cyan">.</span>
               <span class="{projectClassName} opacity-0">
