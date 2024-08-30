@@ -111,7 +111,7 @@
     </div>
 
     <div
-      class="w-full lg:pr-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-5 mt-5 justify-items-center"
+      class="w-full lg:pr-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-5 gap-x-3 mt-5 justify-items-center"
     >
       <a href="tel:+919081865254" target="_blank" class="classHover w-full">
         <div
@@ -202,22 +202,6 @@
           <div class="text text-xl">
             <p>Linkedin.</p>
             <p>Panchal Bhavya</p>
-          </div>
-        </div>
-      </a>
-      <a
-        href="https://maps.app.goo.gl/GuJ7Qn9zeGqYKLGP6"
-        target="_blank"
-        class="classHover w-full"
-      >
-        <div
-          class="lg:w-full w-11/12 h-24 border hover:bg-[#44ff] hover:text-white transition-all border-main-cyan rounded-lg flex justify-start items-center ml-1"
-        >
-          <div class="callLogo">
-            <img alt="map icon" src={map} class="mx-5" />
-          </div>
-          <div class="text text-xl">
-            <p>Location.</p>
           </div>
         </div>
       </a>
