@@ -111,7 +111,7 @@
     </div>
 
     <div
-      class="w-full lg:pr-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-5 gap-x-3 mt-5 justify-items-center"
+      class="w-full lg:pr-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-5 lg:gap-x-3 mt-5 justify-items-center"
     >
       <a href="tel:+919081865254" target="_blank" class="classHover w-full">
         <div
