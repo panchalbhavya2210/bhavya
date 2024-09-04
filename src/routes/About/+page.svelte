@@ -62,7 +62,7 @@
             cards.forEach((para, ind) => {
               gsap.to(para, {
                 scale: 1,
-                duration: 0.5 + ind * 0.2,
+                duration: 0.1 + ind * 0.1,
                 delay: 0,
                 onComplete: () => {
                   obs.disconnect();
@@ -256,7 +256,7 @@
               Stock Manager | Here i worked for 2 years and i did management of
               the company stock and other works.
             </p>
-            <p>2020-2022</p>
+            <p>2020 - 2022</p>
           </div>
         </div>
       </div>
@@ -264,30 +264,52 @@
         <div class="flex items-start">
           <svg
             width="41"
-            height="124"
-            viewBox="0 0 41 124"
+            height="145"
+            viewBox="0 0 41 145"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             class="w-14 md:w-16 lg:w-16"
           >
             <circle cx="20.5" cy="20.5" r="20" stroke="black" />
+            <path d="M20.5 21V145" stroke="#44ff" stroke-width="5" />
             <circle cx="21" cy="21" r="13" fill="#44ff" />
           </svg>
 
           <div class="w-11/12 ml-3">
             <p class="text-2xl">Perpetual Pharmaceuticals.</p>
             <p>
-              Office Manager | Currently i am working here and i manage the
-              whole office by myself. Creating and parceling the order while
-              also managing the stock.
+              Office Manager | Was working here as office manager. Taking order
+              , providing medicines to medicals & billing.
             </p>
-            <p>2020 - Currently Working.</p>
+            <p>09/2022 - 09/2024.</p>
+          </div>
+        </div>
+      </div>
+      <div class="work">
+        <div class="flex items-start">
+          <svg
+            width="41"
+            height="145"
+            viewBox="0 0 41 145"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-14 md:w-16 lg:w-16"
+          >
+            <circle cx="20.5" cy="20.5" r="20" stroke="black" />
+            <!-- <path d="M20.5 21V145" stroke="#44ff" stroke-width="5" /> -->
+            <circle cx="21" cy="21" r="13" fill="#44ff" />
+          </svg>
+
+          <div class="w-11/12 ml-3">
+            <p class="text-2xl">eQuest Solutions.</p>
+            <p>Junior Software Engineer | Description soon.</p>
+            <p>09/2024 - Currently Working.</p>
           </div>
         </div>
       </div>
       <!-- </div> -->
     </div>
-    <div class="study sectionAbout mt-10">
+    <div class="study sectionAbout">
       <!-- <div
       class="relative top-60 sm:top-28 md:top-64 lg:top-64 ml-5 sm:ml-8 md:ml-10 lg:ml-14"
     > -->

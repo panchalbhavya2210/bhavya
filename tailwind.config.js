@@ -3,7 +3,7 @@ export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     colors: {
-      "main-cyan": "#44ff",
+      "main-cyan": "#44ff ",
       "nav-cyan": "#44FF",
       white: "#FFFFFF",
       black: "#000000",

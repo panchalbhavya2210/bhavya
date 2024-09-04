@@ -12,28 +12,16 @@
 
         <div class="leading-relaxed mt-5 text-xl">
           <a href="/"
-            ><button
-              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
-              >Home</button
-            ></a
+            ><button class="transition-all px-1"><span>Home</span></button></a
           ><br />
           <a href="/About"
-            ><button
-              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
-              >About</button
-            ></a
+            ><button class=" transition-all px-1">About</button></a
           ><br />
           <a href="/Work"
-            ><button
-              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
-              >My Projects</button
-            ></a
+            ><button class=" transition-all px-1">My Projects</button></a
           ><br />
           <a href="/Contact">
-            <button
-              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
-              >Connect</button
-            >
+            <button class=" transition-all px-1">Connect</button>
           </a>
         </div>
       </div>
@@ -44,22 +32,15 @@
           <a
             href="https://fonts.google.com/specimen/Della+Respira"
             target="_blank"
-            ><button
-              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
-              >Font : Della Respira</button
+            ><button class=" transition-all px-1">Font : Della Respira</button
             ></a
           ><br />
           <a href="https://iconify.design" target="_blank">
-            <button
-              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
-              >Icon : Iconify.design</button
+            <button class=" transition-all px-1">Icon : Iconify.design</button
             ></a
           ><br />
           <a href="https://figma.com" target="_blank"
-            ><button
-              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
-              >Design : Figma</button
-            ></a
+            ><button class=" transition-all px-1">Design : Figma</button></a
           >
         </div>
       </div>
@@ -68,27 +49,18 @@
 
         <div class="leading-relaxed mt-5 text-xl">
           <a href="https://github.com/panchalbhavya2210" target="_blank">
-            <button
-              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
-              >Github</button
-            >
+            <button class=" transition-all px-1">Github</button>
           </a>
           <br />
           <a href="https://x.com/panchalbhavya22" target="_blank">
-            <button
-              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
-              >Twitter</button
-            >
+            <button class=" transition-all px-1">Twitter</button>
           </a>
           <br />
           <a
             href="https://www.linkedin.com/in/bhavya-panchal-83a6a4296/"
             target="_blank"
           >
-            <button
-              class="hover:bg-[#f9fcf3] transition-all px-1 hover:text-black"
-              >LinkedIn</button
-            >
+            <button class=" transition-all px-1">LinkedIn</button>
           </a>
           <br />
         </div>
@@ -110,3 +82,30 @@
     </div>
   </div>
 </main>
+
+<style>
+  button {
+    position: relative;
+  }
+  button::after {
+    background: #fff;
+    content: "";
+    height: 1px;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: 0%;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition: transform 0.45s;
+    -webkit-transition: transform 0.45s;
+    -moz-transition: transform 0.45s;
+    -ms-transition: transform 0.45s;
+    -o-transition: transform 0.45s;
+    width: 100%;
+  }
+  button:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+    transform-origin: 0 50%; /* Change origin to animate from left to right */
+  }
+</style>

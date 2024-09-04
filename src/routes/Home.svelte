@@ -209,8 +209,8 @@
         <div class="rotHand ml-2">👋🏼</div>
         ,
       </div>
-      <p>I Am Bhavya Panchal .</p>
-      <p>I Am Web Developer.</p>
+      <p>I Am Bhavya Panchal,</p>
+      <p>A Web Developer.</p>
       <p class="text-2xl mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4"></p>
       <p class="text-2xl mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4">
         A web developer and UI designer who loves turning ideas into reality.
