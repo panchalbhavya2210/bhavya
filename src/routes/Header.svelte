@@ -4,6 +4,8 @@
   import gsap from "gsap";
   import { onMount } from "svelte";
   import ScrollTrigger from "gsap/dist/ScrollTrigger";
+  import { initializeApp } from "firebase/app";
+
   onMount(() => {
     gsap.registerPlugin(ScrollTrigger);
 
