@@ -11,8 +11,54 @@ body {
       rgba(219, 219, 219, 0.653) 1px,
       transparent 1px
     ),
-    /* Horizontal lines */
-      linear-gradient(90deg, rgba(219, 219, 219, 0.653) 1px, transparent 1px); /* Vertical lines */
-  background-size: 60px 60px; /* Size of the grid cells */
-  background-attachment: fixed; /* Fixed grid effect */
+    linear-gradient(90deg, rgba(219, 219, 219, 0.653) 1px, transparent 1px);
+  background-size: 60px 60px;
+  background-attachment: fixed;
+}
+
+.hover-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-container::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(90deg, rgb(46, 46, 255), #3a99ff);
+  z-index: 0;
+  border-radius: 100%;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.hover-container:hover::before {
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: scale(200);
+}
+
+@media only screen and (max-width: 435px) {
+  /* Your styles here */
+  .hover-container:hover::before {
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(90);
+  }
+}
+
+.hover-container:hover .text,
+.hover-container:hover .callLogo {
+  transition: 0.3s;
+  color: #fff;
+  filter: invert(100%);
+}
+
+.classHover {
+  z-index: 1;
+}
+
+.callLogo img {
+  z-index: 5;
 }
