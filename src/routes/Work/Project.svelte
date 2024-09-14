@@ -230,7 +230,7 @@
         <div class="visit absolute bottom-5">
           <a href={projectLink} target="_blank">
             <button
-              class="uppercase font-bold text-left transition-all text-lg"
+              class="uppercase font-bold text-left transition-all text-base"
               id={btnID}
               >Visit Site<span class="text-nav-cyan">.</span>
               <span class="{projectClassName} opacity-0">

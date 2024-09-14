@@ -209,7 +209,7 @@
         <div class="rotHand ml-2">👋🏼</div>
         ,
       </div>
-      <p>I Am Bhavya Panchal,</p>
+      <p class=" mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4">I Am Bhavya Panchal,</p>
       <p>A Web Developer.</p>
       <p class="text-2xl mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4"></p>
       <p class="text-2xl mt-9 w-80 sm:w-96 sm:mt-5 lg:w-2/4">
@@ -394,7 +394,7 @@
         <img src={MyImage} alt="" class="" />
       </div>
     </div>
-    <div class="textData text-center mt-4 text-3xl">
+    <div class="textData text-center mt-5 text-3xl">
       <p>Front-end Developer.</p>
     </div>
     <div class="textData w-full flex justify-center mt-4 text-2xl">
