@@ -44,7 +44,13 @@
     gsap.to(".work_text", {
       scrollTrigger: "#work-exp",
       duration: 1,
-      text: "Work & Experience",
+      text: "Work & Experience.",
+      ease: "none",
+    });
+    gsap.to(".study_edu", {
+      scrollTrigger: "#study-exp",
+      duration: 1,
+      text: "Study & Education.",
       ease: "none",
     });
     gsap.to(".opacity_abt", {
@@ -338,7 +344,7 @@
       <!-- </div> -->
     </div>
 
-    <div class="work sectionAbout my-10" id="work-exp">
+    <div class="work sectionAbout mt-24" id="work-exp">
       <div class="flex text-3xl">
         <span class="border-l-4 border-l-main-cyan pl-3 work_text"></span>
       </div>
@@ -470,11 +476,9 @@
         </div>
       </div>
     </div>
-    <div class="work sectionAbout my-10">
+    <div class="work sectionAbout mt-10" id="study-exp">
       <div class="flex text-3xl">
-        <span class="border-l-4 border-l-main-cyan pl-3"
-          >Study & Education.</span
-        >
+        <span class="border-l-4 border-l-main-cyan pl-3 study_edu"></span>
       </div>
       <div class="work mt-10">
         <div class="flex items-start">
