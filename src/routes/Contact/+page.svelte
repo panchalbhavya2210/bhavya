@@ -1,10 +1,8 @@
 <script>
   import call from "../../lib/assets/call.svg";
   import github from "../../lib/assets/github.svg";
-  import ig from "../../lib/assets/ig.svg";
   import linked from "../../lib/assets/linked.svg";
   import mail from "../../lib/assets/mail.svg";
-  import map from "../../lib/assets/map.svg";
   import x from "../../lib/assets/x.svg";
   import gsap from "gsap";
   import TextPlugin from "gsap/dist/TextPlugin";

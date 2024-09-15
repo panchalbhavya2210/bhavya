@@ -1,11 +1,7 @@
 <script>
   import Home from "./Home.svelte";
 
-  import {
-    getAnalytics,
-    initializeAnalytics,
-    logEvent,
-  } from "firebase/analytics";
+  import { getAnalytics, logEvent } from "firebase/analytics";
   import { initializeApp } from "firebase/app";
   import { firebaseConfig } from "../lib/firebaseConfig";
   import { onMount } from "svelte";
