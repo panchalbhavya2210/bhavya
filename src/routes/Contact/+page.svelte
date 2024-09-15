@@ -15,7 +15,13 @@
 
   onMount(() => {
     gsap.registerPlugin(TextPlugin, ScrollToPlugin, Observer, ScrollTrigger);
-
+    gsap.to(".jump", {
+      duration: 2.5,
+      ease: "elastic.out(1,0.3)",
+      repeat: -1,
+      y: -20,
+      yoyo: true,
+    });
     gsap.from(".hover-container", {
       scrollTrigger: {
         trigger: ".tgt_div",
@@ -108,7 +114,9 @@
         </clipPath>
       </defs>
     </svg>
-    <div class="w-full absolute bottom-10">
+    <div
+      class="w-full absolute bottom-24 lg:bottom-10 md:bottom-10 sm:bottom-10 jump"
+    >
       <svg
         width="102"
         height="62"
