@@ -19,7 +19,16 @@
 
   onMount(() => {
     gsap.registerPlugin(TextPlugin, ScrollToPlugin, Observer);
-
+    gsap.from(".projectOne", {
+      scrollTrigger: {
+        trigger: ".work-sect",
+      },
+      y: 150,
+      opacity: 0,
+      stagger: 0.1,
+      duration: 1,
+      ease: "back.inOut",
+    });
     const paths = document.querySelectorAll(".paths-home");
 
     paths.forEach((path, index) => {
@@ -197,6 +206,7 @@
   }
 </script>
 
+K
 <main>
   <div
     class="relative top-36 sm:top-28 md:top-28 lg:top-28 ml-5 sm:ml-8 md:ml-10 lg:ml-14 flex"
@@ -447,7 +457,7 @@
     </div>
 
     <div
-      class="grid lg:grid-cols-3 md:grid-cols-2 mt-10 gap-5 md:gap-2 sm:grid-cols-2 justify-items-center"
+      class="work-sect grid lg:grid-cols-3 md:grid-cols-2 mt-10 gap-5 md:gap-2 sm:grid-cols-2 justify-items-center"
     >
       <div class="projectOne relative">
         <div class="w-80 h-96 border-main-cyan rounded-lg border-2">
