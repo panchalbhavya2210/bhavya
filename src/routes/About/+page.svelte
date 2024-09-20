@@ -142,8 +142,8 @@
 </svelte:head>
 
 <main>
-  <!-- svelte-ignore a11y-click-events-have-key-events -->
   <h1 class="opacity-0 absolute">.</h1>
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
 
   <div
     class="svgContainer w-full h-lvh"
