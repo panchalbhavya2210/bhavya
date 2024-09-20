@@ -135,6 +135,10 @@
 <svelte:head>
   <title>About • Bhavya</title>
   <meta name="description" content="Bhavya Panchal's Portfolio" />
+  <meta
+    name="robots"
+    content="max-snippet:-1, max-image-preview:large, max-video-preview:-1, noarchive"
+  />
 </svelte:head>
 
 <main>
