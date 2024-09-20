@@ -143,6 +143,8 @@
 
 <main>
   <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <h1 class="opacity-0 absolute">.</h1>
+
   <div
     class="svgContainer w-full h-lvh"
     on:click={scrollTo}
@@ -221,7 +223,7 @@
           <div
             class="betaImg flex justify-center items-center w-36 h-36 rounded-full overflow-hidden"
           >
-            <img src={MyImage} alt="" class="w-40 h-40 object-cover" />
+            <img src={MyImage} alt="personal" class="w-40 h-40 object-cover" />
           </div>
           <div class="githubBtn mt-5"></div>
         </div>

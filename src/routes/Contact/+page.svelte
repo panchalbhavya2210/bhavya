@@ -68,6 +68,9 @@
   />
 </svelte:head>
 <main>
+  <h1>
+    <h1 class="absolute opacity-0">.</h1>
+  </h1>
   <!-- svelte-ignore a11y-click-events-have-key-events -->
   <!-- svelte-ignore a11y-no-static-element-interactions -->
 

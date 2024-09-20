@@ -178,6 +178,7 @@
 </svelte:head>
 
 <main>
+  <h1 class="absolute opacity-0">.</h1>
   <!-- svelte-ignore a11y-click-events-have-key-events -->
   <div
     aria-label="Click to scroll"

@@ -206,10 +206,10 @@
   }
 </script>
 
-K
 <main>
+  <h1 class="opacity-0 absolute">.</h1>
   <div
-    class="relative top-36 sm:top-28 md:top-28 lg:top-28 ml-5 sm:ml-8 md:ml-10 lg:ml-14 flex"
+    class="relative top-36 sm:top-28 md:top-28 lg:top-20 ml-5 sm:ml-8 md:ml-10 lg:ml-14 flex"
   >
     <div
       class="para text-3xl leading-normal sm:text-5xl sm:leading-normal md:text-3xl md:leading-normal lg:text-6xl lg:leading-normal"
@@ -401,7 +401,7 @@ K
       <div
         class="imgContainer w-36 h-36 mt-4 rounded-full bg-main-cyan overflow-hidden flex justify-center items-center"
       >
-        <img src={MyImage} alt="" class="" />
+        <img src={MyImage} alt="personal" class="" />
       </div>
     </div>
     <div class="textData text-center mt-5 text-3xl">
