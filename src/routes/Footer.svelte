@@ -5,7 +5,7 @@
 <main>
   <div class="p-5 md:lg-p-11 lg:p-11 relative bottom-10 top-10 text-white">
     <div
-      class="style mx-auto rounded-lg grid lg:grid-cols-3 grid-cols-1 gap-10 lg:justify-items-center bg-nav-cyan h-full pb-5 p-5 sm:mt-0 md:mt-0 lg:mt-0 sm:pb-5 md:pb-5 lg:pb-5"
+      class="style grad mx-auto rounded-lg grid lg:grid-cols-3 grid-cols-1 gap-10 lg:justify-items-center bg-nav-cyan h-full pb-5 p-5 sm:mt-0 md:mt-0 lg:mt-0 sm:pb-5 md:pb-5 lg:pb-5"
     >
       <div class="navigation lg:ml-5 mt-5 ml-5">
         <p class="uppercase text-3xl">Navigation</p>
@@ -34,6 +34,9 @@
             target="_blank"
             ><button class=" transition-all px-1">Font : Della Respira</button
             ></a
+          ><br />
+          <a href="https://www.cufonfonts.com/font/lufga" target="_blank"
+            ><button class=" transition-all px-1">2nd Font : Lufga</button></a
           ><br />
           <a href="https://iconify.design" target="_blank">
             <button class=" transition-all px-1">Icon : Iconify.design</button
@@ -67,8 +70,7 @@
       </div>
     </div>
     <div
-      class="infrig w-full text-black opacity-50 {$page.url.pathname ===
-        '/About' ||
+      class="infrig w-full opacity-50 {$page.url.pathname === '/About' ||
       $page.url.pathname === '/Work' ||
       $page.url.pathname === '/Contact'
         ? 'block'
@@ -84,6 +86,9 @@
 </main>
 
 <style>
+  .grad {
+    background-image: linear-gradient(25deg, #2e55db, #058ed9);
+  }
   button {
     position: relative;
   }

@@ -38,88 +38,44 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap"
     />
-
     %sveltekit.head%
 
     <style>
       body {
-        background-color: #f9fcf3;
-        font-family: Della Respira;
+        background-color: #0d1821;
+        color: #fff;
         font-display: swap;
         background-image: linear-gradient(
             0deg,
-            rgba(219, 219, 219, 0.653) 1px,
+            rgba(219, 219, 219, 0.053) 1px,
             transparent 1px
           ),
           linear-gradient(
             90deg,
-            rgba(219, 219, 219, 0.653) 1px,
+            rgba(219, 219, 219, 0.053) 1px,
             transparent 1px
           );
         background-size: 60px 60px;
         background-attachment: fixed;
       }
+      .della {
+        font-family: Della Respira;
+      }
       ::-webkit-scrollbar {
-        width: 10px; /* Width of the scrollbar */
+        width: 10px;
       }
 
       ::-webkit-scrollbar-track {
-        background: #d2d2d2; /* Background color of the track */
+        background: #d2d2d2;
         border-radius: 10px;
       }
 
       ::-webkit-scrollbar-thumb {
-        background: #888; /* Color of the draggable part of the scrollbar */
+        background: #888;
       }
 
       ::-webkit-scrollbar-thumb:hover {
-        background: #44ff; /* Color when hovering over the scrollbar */
-      }
-      .hover-container {
-        position: relative;
-        overflow: hidden;
-      }
-
-      .hover-container::before {
-        content: "";
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        top: 0px;
-        left: 0px;
-        background: linear-gradient(90deg, rgb(46, 46, 255), #3a99ff);
-        z-index: 0;
-        border-radius: 100%;
-        transform: scale(0);
-        z-index: -1;
-      }
-
-      .hover-container:hover::before {
-        transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        transform: scale(200);
-      }
-
-      @media only screen and (max-width: 435px) {
-        /* Your styles here */
-        .hover-container:hover::before {
-          transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-          transform: scale(90);
-        }
-      }
-
-      .hover-container:hover .text,
-      .hover-container:hover .callLogo {
-        transition: 0.3s;
-        color: #fff;
-        filter: invert(100%);
-      }
-
-      .classHover {
-        z-index: 1;
-      }
-
-      .callLogo img {
-        z-index: 5;
+        background: #058ed9;
       }
     </style>
   </head>

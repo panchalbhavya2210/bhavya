@@ -4,7 +4,6 @@
   import gsap from "gsap";
   import { onMount } from "svelte";
   import ScrollTrigger from "gsap/dist/ScrollTrigger";
-  import { initializeApp } from "firebase/app";
 
   onMount(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -13,12 +12,13 @@
       scrollTrigger: {
         start: "top top",
         end: "+=10",
-        scrub: 0.5,
+        scrub: 1,
       },
     });
     tl.to(".fixHeight", {
-      width: "95%",
-      marginTop: 10,
+      width: "100%",
+      marginTop: 0,
+      borderRadius: 0,
     });
 
     gsap.from(".link", {
@@ -153,11 +153,12 @@
 
 <main>
   <div
-    class="w-11/12 fixHeight h-[70px] mx-auto bg-nav-cyan shadow-lg bg-opacity-85 text-white backdrop-blur-md p-3 rounded-lg mt-5 overflow-hidden fixed-container sm:h-[70px] md:h-[70px] lg:h-[70px]"
+    class="w-11/12 fixHeight h-[70px] mx-auto bg-nav-cyan shadow-lg text-white backdrop-blur-md p-3 rounded-lg mt-5 overflow-hidden fixed-container sm:h-[70px] md:h-[70px] lg:h-[70px]"
   >
-    <div class="flex justify-between items-center">
-      <a href="/">
+    <div class="flex justify-between items-center relative">
+      <a href="/" class="hoverA flex items-end">
         <img src={Logo} class="w-auto h-10" alt="logo" />
+        <span class="width"></span>
       </a>
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -305,5 +306,16 @@
     height: 100%;
     color: #000;
     transition: all 0.3s;
+  }
+  .width {
+    width: 7.5px;
+    height: 7.5px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: -8px;
+    transition: 0.3s;
+  }
+  .hoverA:hover .width {
+    width: 50px;
   }
 </style>

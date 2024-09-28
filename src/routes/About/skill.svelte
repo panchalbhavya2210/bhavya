@@ -58,12 +58,12 @@
       transform 0.5s,
       box-shadow 0.5s;
     transform-style: preserve-3d;
-    background-color: #ecebeb70;
+    background-color: #ecebeb1b;
   }
 
   .skill:hover {
     transform: rotateY(5deg) rotateX(5deg) scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(189, 189, 189, 0.2);
     border: 0;
   }
 

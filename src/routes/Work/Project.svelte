@@ -244,13 +244,13 @@
                 >
                   <path
                     d="M0 25.5H125L152.5 3"
-                    stroke="#44ff"
+                    stroke="#058ED9"
                     stroke-width="4"
                     class={className}
                   />
                   <path
                     d="M135 3H151V19"
-                    stroke="#44ff"
+                    stroke="#058ED9"
                     stroke-width="5"
                     stroke-linecap="round"
                     stroke-linejoin="round"

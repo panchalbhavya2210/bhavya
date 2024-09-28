@@ -3,7 +3,6 @@
   import Footer from "./Footer.svelte";
   import Header from "./Header.svelte";
   import { inject } from "@vercel/analytics";
-
   inject();
 </script>
 
